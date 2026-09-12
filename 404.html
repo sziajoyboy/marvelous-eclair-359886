@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>404 — Ez a felvétel nincs az archívumban · Isten Hozott®</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/logo_mark_orange.png" sizes="any">
+  <link rel="stylesheet" href="styles/fonts-local.css">
+  <style>
+    :root{
+      --c-black:#070707; --c-white:#F0EDE6; --c-orange:#EC7200;
+      --ff-d:'Big Shoulders Display',sans-serif;
+      --ff-b:'Andada Pro',serif;
+      --ff-m:'Space Mono',monospace;
+      --ease-out:cubic-bezier(.16,1,.3,1);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html,body{height:100%}
+    body{background:var(--c-black);color:var(--c-white);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:8px;padding:clamp(20px,4vw,64px);text-align:center;overflow:hidden}
+    ::selection{background:var(--c-orange);color:var(--c-black)}
+    .nf-mark{width:44px;height:44px;margin-bottom:18px;opacity:0;
+      animation:up .8s var(--ease-out) .1s forwards}
+    .nf-eyebrow{font-family:var(--ff-m);font-size:9.5px;letter-spacing:.24em;
+      text-transform:uppercase;color:var(--c-orange);opacity:0;
+      animation:up .8s var(--ease-out) .2s forwards}
+    .nf-num{font-family:var(--ff-d);font-weight:700;line-height:.9;
+      font-size:clamp(120px,28vw,340px);letter-spacing:-.04em;
+      color:transparent;-webkit-text-stroke:2px rgba(240,237,230,.35);
+      opacity:0;animation:up .9s var(--ease-out) .3s forwards}
+    .nf-num em{font-style:normal;color:var(--c-white);-webkit-text-stroke:0}
+    .nf-text{font-family:var(--ff-b);font-style:italic;font-size:clamp(15px,1.6vw,19px);
+      line-height:1.7;color:rgba(240,237,230,.65);max-width:440px;margin-top:14px;
+      opacity:0;animation:up .8s var(--ease-out) .45s forwards}
+    .nf-link{display:inline-block;margin-top:34px;font-family:var(--ff-m);
+      font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+      color:var(--c-white);text-decoration:none;
+      border:1px solid rgba(240,237,230,.25);padding:14px 26px;
+      transition:border-color .3s,color .3s,background .3s;
+      opacity:0;animation:up .8s var(--ease-out) .6s forwards}
+    .nf-link:hover{border-color:var(--c-orange);color:var(--c-orange)}
+    .nf-foot{position:fixed;bottom:clamp(16px,3vw,40px);left:0;right:0;
+      font-family:var(--ff-m);font-size:8px;letter-spacing:.26em;
+      text-transform:uppercase;color:rgba(240,237,230,.22)}
+    @keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){
+      .nf-mark,.nf-eyebrow,.nf-num,.nf-text,.nf-link{animation:none;opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <img class="nf-mark" src="assets/logo_mark_orange.png" alt="Isten Hozott®">
+  <span class="nf-eyebrow">Hiba — № 404</span>
+  <h1 class="nf-num">4<em>0</em>4</h1>
+  <p class="nf-text">Ez a felvétel nincs az archívumban. Vagy sosem volt,
+    vagy már átvágtuk máshová — a kultúra nem információ, a linkek viszont azok.</p>
+  <a class="nf-link" href="index.html">Vissza az archívumba&nbsp;&nbsp;→</a>
+  <span class="nf-foot">Isten Hozott® · Budapest · É 47.49° K 19.04°</span>
+</body>
+</html>

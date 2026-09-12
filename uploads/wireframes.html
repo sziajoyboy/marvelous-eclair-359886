@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isten Hozott® — Website Wireframes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Big Shoulders Display';
+      font-weight: 700 900;
+      font-style: normal;
+      font-display: swap;
+      src: url('fonts/BigShoulders-Bold.ttf') format('truetype');
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #111; }
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" src="design-canvas.jsx"></script>
+
+  <script type="text/babel">
+  // ─────────────────────────────────────────────
+  // SHARED PRIMITIVES
+  // ─────────────────────────────────────────────
+
+  const BG   = '#0A0A0A';
+  const FG   = '#F0EDE6';
+  const OR   = '#EC7200';
+  const GRAY = 'rgba(240,237,230,0.18)';
+  const FAINT= 'rgba(240,237,230,0.07)';
+
+  const ImgBox = ({ w='100%', h=120, label='FOTÓ', style={} }) => (
+    <div style={{
+      width:w, height:h, border:`1.5px dashed ${GRAY}`, borderRadius:2,
+      position:'relative', overflow:'hidden',
+      display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0,
+      ...style,
+    }}>
+      <svg style={{position:'absolute',inset:0,width:'100%',height:'100%'}}>
+        <line x1="0%" y1="0%" x2="100%" y2="100%" stroke={FAINT} strokeWidth="1.5"/>
+        <line x1="100%" y1="0%" x2="0%" y2="100%" stroke={FAINT} strokeWidth="1.5"/>
+      </svg>
+      <span style={{fontFamily:'Caveat',fontSize:10,color:'rgba(240,237,230,0.3)',position:'relative',letterSpacing:'0.05em'}}>{label}</span>
+    </div>
+  );
+
+  const TxtLine = ({ w='100%', h=7, op=0.22, mb=5 }) => (
+    <div style={{height:h,width:w,background:`rgba(240,237,230,${op})`,borderRadius:2,marginBottom:mb,flexShrink:0}}/>
+  );
+
+  const Chip = ({ children, active=false }) => (
+    <span style={{
+      display:'inline-flex', alignItems:'center',
+      border:`1px solid ${active ? OR : GRAY}`,
+      color: active ? OR : 'rgba(240,237,230,0.4)',
+      fontFamily:'Caveat', fontSize:10, padding:'2px 7px', borderRadius:2,
+      letterSpacing:'0.04em', flexShrink:0,
+    }}>{children}</span>
+  );
+
+  const Annot = ({ children, mt=8 }) => (
+    <div style={{
+      background:'rgba(236,114,0,0.07)', border:`1px solid rgba(236,114,0,0.35)`,
+      borderRadius:3, padding:'5px 9px',
+      fontFamily:'Caveat', fontSize:11, color:OR, marginTop:mt, lineHeight:1.5,
+    }}>⤷ {children}</div>
+  );
+
+  const SecLabel = ({ num, label }) => (
+    <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:8}}>
+      <span style={{fontFamily:'Space Mono,monospace',fontSize:8,letterSpacing:'0.2em',color:'rgba(236,114,0,0.6)'}}>{num}</span>
+      <span style={{fontFamily:'Space Mono,monospace',fontSize:8,letterSpacing:'0.14em',color:'rgba(240,237,230,0.35)',textTransform:'uppercase'}}>{label}</span>
+    </div>
+  );
+
+  const Hr = () => (
+    <div style={{height:1,background:'rgba(240,237,230,0.07)',margin:'14px 0'}}/>
+  );
+
+  const BigType = ({ children, size=28, style={} }) => (
+    <div style={{
+      fontFamily:'Big Shoulders Display,sans-serif', fontWeight:900,
+      fontSize:size, color:FG, textTransform:'uppercase',
+      lineHeight:0.93, letterSpacing:'-0.02em', ...style,
+    }}>{children}</div>
+  );
+
+  const Mono = ({ children, style={} }) => (
+    <span style={{fontFamily:'Space Mono,monospace',fontSize:8,letterSpacing:'0.18em',color:'rgba(240,237,230,0.38)',textTransform:'uppercase',...style}}>{children}</span>
+  );
+
+  const Bar = ({ w=24, style={} }) => (
+    <div style={{height:1,width:w,background:OR,margin:'8px 0',...style}}/>
+  );
+
+  const NavBar = ({ style={} }) => (
+    <div style={{
+      display:'flex',alignItems:'center',justifyContent:'space-between',
+      padding:'7px 12px',
+      borderBottom:`1px solid rgba(240,237,230,0.1)`,
+      ...style,
+    }}>
+      <div style={{display:'flex',alignItems:'center',gap:6}}>
+        <img src="assets/logo_mark_orange.png" alt="IH" style={{width:13,height:13,objectFit:'contain'}}/>
+        <span style={{fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:9.5,color:FG,letterSpacing:'0.06em',textTransform:'uppercase'}}>Isten Hozott®</span>
+      </div>
+      <div style={{display:'flex',gap:12}}>
+        {['Munkáink','Kapcsolat','EN'].map(l => (
+          <Mono key={l} style={{fontSize:7.5}}>{l}</Mono>
+        ))}
+      </div>
+    </div>
+  );
+
+  const ConceptBadge = ({ letter, name, desc }) => (
+    <div style={{
+      background:`rgba(236,114,0,0.06)`, border:`1px solid rgba(236,114,0,0.25)`,
+      borderRadius:3, padding:'10px 12px', marginBottom:14,
+    }}>
+      <div style={{display:'flex',alignItems:'center',gap:8,marginBottom:4}}>
+        <span style={{fontFamily:'Big Shoulders Display,sans-serif',fontWeight:900,fontSize:22,color:OR,lineHeight:1}}>{letter}</span>
+        <span style={{fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:14,color:FG,textTransform:'uppercase',letterSpacing:'0.04em'}}>{name}</span>
+      </div>
+      <div style={{fontFamily:'Caveat',fontSize:11.5,color:'rgba(240,237,230,0.55)',lineHeight:1.45}}>{desc}</div>
+    </div>
+  );
+
+
+  // ─────────────────────────────────────────────
+  // WIREFRAME A — FOLYAM (The Cinematic Stream)
+  // ─────────────────────────────────────────────
+  const WireframeA = () => {
+    const p = { padding:'0 15px' };
+    return (
+      <div style={{background:BG,width:'100%',color:FG,paddingTop:14}}>
+
+        <div style={p}>
+          <ConceptBadge letter="A" name="FOLYAM" desc="Mindent visz az áramlat. Pinned horizontal scroll a munkáknál — pont mint a Norris site. Cinematikus, lassú, imerzív. A fotók dominálnak."/>
+        </div>
+
+        {/* 00 LOADER */}
+        <div style={p}>
+          <SecLabel num="00" label="Loader Screen"/>
+          <div style={{height:96,border:`1px dashed ${GRAY}`,borderRadius:2,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:10}}>
+            <img src="assets/logo_mark_orange.png" alt="xt" style={{width:20,height:20,objectFit:'contain',opacity:0.55}}/>
+            <div style={{width:90,height:1.5,background:'rgba(240,237,230,0.08)',borderRadius:1,position:'relative',overflow:'hidden'}}>
+              <div style={{position:'absolute',left:0,top:0,width:'65%',height:'100%',background:OR,borderRadius:1}}/>
+            </div>
+          </div>
+          <Annot>GSAP: logo scale(0→1) + fadeIn (400ms). Progress line 0→100% (1.2s ease-out). onComplete → curtain wipe reveal hero. "ISTEN HOZOTT®" letter-by-letter pre-render off-screen.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 01 HERO */}
+        <div style={p}>
+          <SecLabel num="01" label="Hero — Fullscreen Parallax"/>
+          <div style={{height:228,position:'relative',border:`1px dashed ${GRAY}`,borderRadius:2,overflow:'hidden'}}>
+            <ImgBox w="100%" h={228} label="FULL-BLEED FOTÓ (Dugattyús / Budapest)" style={{border:'none',borderRadius:0}}/>
+            <div style={{position:'absolute',inset:0,background:'rgba(7,7,7,0.52)'}}/>
+            <div style={{position:'absolute',top:0,left:0,right:0}}>
+              <NavBar style={{background:'transparent',borderBottom:'1px solid rgba(240,237,230,0.08)'}}/>
+            </div>
+            <div style={{position:'absolute',bottom:26,left:14,right:14}}>
+              <BigType size={38} style={{lineHeight:0.88}}>ISTEN<br/>HOZOTT®</BigType>
+              <Bar w={22} style={{margin:'10px 0 6px'}}/>
+              <div style={{fontFamily:'Caveat',fontSize:11,color:'rgba(240,237,230,0.55)',fontStyle:'italic'}}>Kutatás, sűrítés, vizualizáció.</div>
+            </div>
+            <div style={{position:'absolute',bottom:10,right:14,display:'flex',alignItems:'center',gap:4}}>
+              <div style={{width:1,height:18,background:'rgba(240,237,230,0.2)'}}/>
+              <Mono style={{fontSize:7}}>SCROLL ↓</Mono>
+            </div>
+          </div>
+          <Annot>Lenis: lerp:0.08, duration:1.4. GSAP SplitText: title chars reveal from clipPath (bottom). BG fotó: y(0→−60px) parallax scrub. Loader-ből: clip-path curtain up.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 02 PINNED HORIZONTAL WORK */}
+        <div style={p}>
+          <SecLabel num="02" label="Munkáink — Pinned Horizontal Scroll"/>
+          <div style={{height:172,border:`1px dashed ${GRAY}`,borderRadius:2,padding:10,overflow:'hidden',position:'relative'}}>
+            <div style={{display:'flex',alignItems:'baseline',justifyContent:'space-between',marginBottom:8}}>
+              <BigType size={14}>Munkáink</BigType>
+              <Mono>(8) projektet gördíts →</Mono>
+            </div>
+            <div style={{display:'flex',gap:7,height:110}}>
+              {[
+                ['Mélyvíz','MÉLY'],
+                ['Hofi','MÉLY'],
+                ['C*nzura','AFTERMOVIE'],
+                ['Esszék','ESSZÉ'],
+              ].map(([title,cat],i) => (
+                <div key={title} style={{flex:'0 0 88px',height:110,position:'relative',overflow:'hidden',borderRadius:2}}>
+                  <ImgBox w={88} h={110} label={title} style={{border:'none',borderRadius:2}}/>
+                  <div style={{position:'absolute',inset:0,background:'rgba(7,7,7,0.4)'}}/>
+                  <div style={{position:'absolute',bottom:6,left:6,right:4,display:'flex',justifyContent:'space-between',alignItems:'flex-end'}}>
+                    <span style={{fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:9,color:FG,textTransform:'uppercase'}}>{title}</span>
+                    <Chip>{cat}</Chip>
+                  </div>
+                </div>
+              ))}
+              <div style={{flex:'0 0 36px',display:'flex',alignItems:'center',justifyContent:'center',color:'rgba(240,237,230,0.2)',fontSize:20}}>›</div>
+            </div>
+            {/* Progress dots */}
+            <div style={{position:'absolute',bottom:8,left:'50%',transform:'translateX(-50%)',display:'flex',gap:4}}>
+              {[0,1,2,3,4,5,6,7].map(i=>(
+                <div key={i} style={{width:i===0?16:4,height:3,borderRadius:2,background:i===0?OR:'rgba(240,237,230,0.2)'}}/>
+              ))}
+            </div>
+          </div>
+          <Annot>ScrollTrigger: pin wrapper 400vh. gsap.to(track, x: -totalWidth) scrub:1. Minden kártya: scale(0.92→1) + opacity(0.5→1) ahogy belép. Touch: pointer drag is.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 03 MANIFESTO */}
+        <div style={p}>
+          <SecLabel num="03" label="Manifesztó — Word Reveal"/>
+          <div style={{background:'rgba(58,10,24,0.45)',border:`1px solid rgba(58,10,24,0.9)`,borderRadius:2,padding:14,position:'relative',overflow:'hidden'}}>
+            <div style={{position:'absolute',right:10,top:'50%',transform:'translateY(-50%)',fontFamily:'Big Shoulders Display,sans-serif',fontWeight:900,fontSize:80,color:'rgba(240,237,230,0.03)',lineHeight:1,userSelect:'none'}}>IH</div>
+            <BigType size={15} style={{lineHeight:1.1,marginBottom:10,position:'relative'}}>
+              A KULTÚRA<br/>NEM INFORMÁCIÓ,<br/>HANEM NARRATÍVA.
+            </BigType>
+            <Bar w={18}/>
+            <TxtLine w="85%" op={0.18}/>
+            <TxtLine w="70%" op={0.14}/>
+          </div>
+          <Annot>ScrollTrigger scrub: háttér fekete→burgundy. GSAP SplitText per-word: opacity(0→1) + y(14→0), stagger:0.06s. A mondatnak "ideje" van — nem villan be.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 04 MUNKÁK LIST */}
+        <div style={p}>
+          <SecLabel num="04" label="Összes Projekt — Editorial Lista"/>
+          {[
+            ['01','Mélyvíz — VV Kriszti','MÉLY BESZ.','2025'],
+            ['02','Beton.Hofi — Tarr Béla Werkfilm','WERKFILM','2025'],
+            ['03','C*nzura XXL','AFTERMOVIE','2025'],
+            ['04','Vizuális Esszék','ESSZÉ','2025'],
+            ['05','Képes Interjúk — Budapest Park','ESSZÉ','2025'],
+          ].map(([n,t,c,y]) => (
+            <div key={n} style={{display:'flex',alignItems:'center',gap:10,padding:'7px 0',borderBottom:`1px solid rgba(240,237,230,0.05)`}}>
+              <Mono style={{color:'rgba(236,114,0,0.5)',flexShrink:0}}>{n}</Mono>
+              <div style={{flex:1,fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:11,textTransform:'uppercase',color:FG,letterSpacing:'0.01em'}}>{t}</div>
+              <Chip>{c}</Chip>
+              <Mono style={{fontSize:7,marginLeft:4}}>{y}</Mono>
+            </div>
+          ))}
+          <div style={{fontFamily:'Caveat',fontSize:10,color:'rgba(240,237,230,0.25)',padding:'6px 0'}}>+ 3 további projekt...</div>
+          <Annot>GSAP: row-onként x(−30→0) + opacity(0→1), stagger:0.08s. Hover: hairline alul nő 0→100% (OR szín). "Összes projekt" gomb felfed.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 05 PARTNERS */}
+        <div style={p}>
+          <SecLabel num="05" label="Együttműködések — Infinite Marquee"/>
+          <div style={{height:46,border:`1px dashed ${GRAY}`,borderRadius:2,overflow:'hidden',display:'flex',alignItems:'center',padding:'0 12px',gap:24}}>
+            {['HBO','Budapest Park','Dugattyús','Bródy Ház','Hype & Hyper'].map(l=>(
+              <span key={l} style={{flexShrink:0,fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:10.5,color:'rgba(240,237,230,0.22)',textTransform:'uppercase',letterSpacing:'0.1em'}}>{l}</span>
+            ))}
+            <Mono style={{fontSize:7,color:'rgba(240,237,230,0.12)'}}>(→ loop)</Mono>
+          </div>
+          <Annot>Pure CSS: @keyframes marquee-scroll, animation-play-state:paused on hover. Duplikált lista a zökkenőmentes loophoz.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 06 CTA */}
+        <div style={{...p,paddingBottom:18}}>
+          <SecLabel num="06" label="CTA — Full Bleed Footer"/>
+          <div style={{height:154,background:'rgba(236,114,0,0.04)',border:`1px solid rgba(236,114,0,0.18)`,borderRadius:2,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:10,textAlign:'center'}}>
+            <Mono style={{color:'rgba(236,114,0,0.5)',fontSize:8}}>KONTAKT</Mono>
+            <BigType size={24} style={{textAlign:'center',lineHeight:0.9}}>VAN EGY<br/>ÖTLETED?</BigType>
+            <Bar w={20} style={{margin:'4px 0'}}/>
+            <div style={{fontFamily:'Caveat',fontSize:12,color:OR}}>helloistenhozott@gmail.com →</div>
+          </div>
+          <Annot>ScrollTrigger: scale(0.88→1) + opacity(0→1) on enter. Opcionális: cursor ripple effect hoverkor. EN/HU toggle a nav-ban végig látható.</Annot>
+        </div>
+
+      </div>
+    );
+  };
+
+
+  // ─────────────────────────────────────────────
+  // WIREFRAME B — VEKTOR (Editorial Vector)
+  // ─────────────────────────────────────────────
+  const WireframeB = () => {
+    const p = { padding:'0 15px' };
+    return (
+      <div style={{background:BG,width:'100%',color:FG,paddingTop:14}}>
+
+        <div style={p}>
+          <ConceptBadge letter="B" name="VEKTOR" desc="Határozott irányvonal. Split-hero, hover-preview lista, format-filter. Erős szerkesztőségi logika. Leginkább portfólió-fókuszú."/>
+        </div>
+
+        {/* 00 LOADER */}
+        <div style={p}>
+          <SecLabel num="00" label="Loader — Minimal Line"/>
+          <div style={{height:96,border:`1px dashed ${GRAY}`,borderRadius:2,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:12}}>
+            <Mono style={{fontSize:10,letterSpacing:'0.28em',color:'rgba(240,237,230,0.25)'}}>ISTEN HOZOTT®</Mono>
+            <div style={{width:130,height:1,background:'rgba(240,237,230,0.08)',position:'relative'}}>
+              <div style={{position:'absolute',left:0,top:0,width:'45%',height:'100%',background:OR}}/>
+            </div>
+          </div>
+          <Annot>Csak a logonév + 1px progress line. Letisztult belépő. onComplete: fade-out → hero szöveg clip-in-ból jön.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 01 SPLIT HERO */}
+        <div style={p}>
+          <SecLabel num="01" label="Hero — Split: Szöveg | Kép"/>
+          <div style={{height:226,border:`1px dashed ${GRAY}`,borderRadius:2,overflow:'hidden',position:'relative',display:'flex'}}>
+            <div style={{position:'absolute',top:0,left:0,right:0,zIndex:2}}>
+              <NavBar style={{background:'rgba(10,10,10,0.7)',borderBottom:'1px solid rgba(240,237,230,0.08)'}}/>
+            </div>
+            {/* Left */}
+            <div style={{flex:'0 0 54%',padding:'42px 12px 12px',display:'flex',flexDirection:'column',justifyContent:'flex-end',borderRight:`1px dashed ${GRAY}`}}>
+              <Chip>VIZUÁLIS ESSZÉ</Chip>
+              <BigType size={22} style={{lineHeight:0.88,marginTop:8}}>KUTATÁS<br/>SŰRÍTÉS<br/>VIZUA-<br/>LIZÁCIÓ.</BigType>
+              <Bar w={18} style={{marginTop:10}}/>
+              <div style={{fontFamily:'Caveat',fontSize:10,color:'rgba(240,237,230,0.5)'}}>Vizuális történetmesélő kollektíva.<br/>Budapest, 2023—</div>
+            </div>
+            {/* Right */}
+            <div style={{flex:1}}>
+              <ImgBox w="100%" h={226} label="PORTRÉ / HELYSZÍN" style={{border:'none',borderRadius:0}}/>
+            </div>
+          </div>
+          <Annot>Bal oldal: GSAP stagger, soronként y(30→0). Jobb: clip-path(0 0,0 0,0 100%,0 100%) → full reveal (0.9s ease). Split: bal szöveg pin amíg jobb kép parallax-ol.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 02 PINNED MANIFESTO */}
+        <div style={p}>
+          <SecLabel num="02" label="Pinned Manifesztó — Scale Reveal"/>
+          <div style={{height:130,background:'rgba(58,10,24,0.5)',border:`1px solid rgba(58,10,24,1)`,borderRadius:2,display:'flex',flexDirection:'column',justifyContent:'center',padding:14,position:'relative',overflow:'hidden'}}>
+            <div style={{position:'absolute',right:10,top:'50%',transform:'translateY(-50%)',fontFamily:'Big Shoulders Display,sans-serif',fontWeight:900,fontSize:82,color:'rgba(240,237,230,0.03)',lineHeight:1}}>01</div>
+            <Bar w={20}/>
+            <BigType size={14} style={{lineHeight:1.12,color:'rgba(240,237,230,0.92)'}}>
+              "A KULTÚRA NEM INFORMÁCIÓ,<br/>HANEM NARRATÍVA."
+            </BigType>
+          </div>
+          <Annot>ScrollTrigger: pin 200vh. Szöveg scale(0.55→1) + opacity(0→1) scrub. Kilép: next section pushes it up. Burgundy bg marad amíg pinned.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 03 HOVER PREVIEW LIST */}
+        <div style={p}>
+          <SecLabel num="03" label="Munkák — Hover Preview Lista"/>
+          <div style={{display:'flex',gap:8}}>
+            <div style={{flex:1}}>
+              {[
+                ['01','Mélyvíz — VV Kriszti','MÉLY'],
+                ['02','Beton.Hofi — Tarr Béla Werkfilm','WERK'],
+                ['03','C*nzura XXL','AFTERMOVIE'],
+                ['04','Vizuális Esszék','ESSZÉ'],
+                ['05','Képes Interjúk','ESSZÉ'],
+                ['06','Pogány Induló — HBO','MÉLY'],
+              ].map(([n,t,c]) => (
+                <div key={n} style={{display:'flex',alignItems:'center',gap:8,padding:'7px 0',borderBottom:`1px solid rgba(240,237,230,0.05)`}}>
+                  <Mono style={{color:'rgba(236,114,0,0.5)',flexShrink:0}}>{n}</Mono>
+                  <div style={{flex:1,fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:11,textTransform:'uppercase',color:FG}}>{t}</div>
+                  <Chip>{c}</Chip>
+                </div>
+              ))}
+            </div>
+            {/* Floating preview */}
+            <div style={{flex:'0 0 68px',position:'relative'}}>
+              <ImgBox w={68} h={148} label="HOVER KÉP" style={{opacity:0.6}}/>
+              <div style={{position:'absolute',top:-14,left:-26,fontFamily:'Caveat',fontSize:9,color:OR,whiteSpace:'nowrap'}}>← hover preview</div>
+            </div>
+          </div>
+          <Annot>Hover: cursor-követő floating image (gsap.quickTo xPercent/yPercent). Scroll: soronként x(−35→0) + opacity stagger. Sor underline: width(0→100%) hover-re.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 04 FORMAT BROWSER */}
+        <div style={p}>
+          <SecLabel num="04" label="Format Browser — Filter"/>
+          <div style={{height:158,border:`1px dashed ${GRAY}`,borderRadius:2,padding:10,overflow:'hidden'}}>
+            <div style={{display:'flex',gap:6,marginBottom:10,flexWrap:'wrap'}}>
+              {['MÉLYVÍZ','SPOTLIGHT','ÉLŐ','ESSZÉ','OFFLINE'].map((f,i)=>(
+                <div key={f} style={{
+                  padding:'3px 9px', border:`1px solid ${i===0?OR:GRAY}`,
+                  borderRadius:2, fontFamily:'Caveat', fontSize:10,
+                  color:i===0?OR:'rgba(240,237,230,0.35)',
+                }}>{f}</div>
+              ))}
+            </div>
+            <div style={{display:'flex',gap:8,height:100}}>
+              <ImgBox w={88} h={100} label="Aktuális projekt" style={{borderRadius:2}}/>
+              <div style={{flex:1,display:'flex',flexDirection:'column',justifyContent:'flex-end',gap:5}}>
+                <TxtLine w="80%" h={8} op={0.35}/>
+                <TxtLine w="60%" h={6} op={0.2}/>
+                <div style={{marginTop:4}}><Chip active>Megnézem →</Chip></div>
+              </div>
+            </div>
+          </div>
+          <Annot>React state: aktív filter. GSAP: crossfade kártya csere (opacity + y). ScrollTrigger: filter-section fades in on enter.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 05 PARTNERS */}
+        <div style={p}>
+          <SecLabel num="05" label="Együttműködések"/>
+          <div style={{height:46,border:`1px dashed ${GRAY}`,borderRadius:2,overflow:'hidden',display:'flex',alignItems:'center',padding:'0 12px',gap:22}}>
+            {['HBO','Budapest Park','Dugattyús','Bródy Ház','Hype & Hyper'].map(l=>(
+              <span key={l} style={{flexShrink:0,fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:10,color:'rgba(240,237,230,0.2)',textTransform:'uppercase',letterSpacing:'0.1em'}}>{l}</span>
+            ))}
+          </div>
+          <Annot>CSS marquee animation. Pause on hover. Logo PNG-k placeholderként behelyezhetők.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 06 CTA */}
+        <div style={{...p,paddingBottom:18}}>
+          <SecLabel num="06" label="CTA — Bal-zárt Tipográfia"/>
+          <div style={{height:144,background:'rgba(236,114,0,0.04)',border:`1px solid rgba(236,114,0,0.16)`,borderRadius:2,display:'flex',flexDirection:'column',justifyContent:'flex-end',padding:14}}>
+            <Mono style={{color:'rgba(236,114,0,0.55)',fontSize:7.5,marginBottom:8}}>VAN EGY ÖTLETED?</Mono>
+            <BigType size={28} style={{lineHeight:0.88}}>BESZ-<br/>ÉLJÜNK.</BigType>
+            <Bar w={18} style={{margin:'10px 0 6px'}}/>
+            <div style={{fontFamily:'Caveat',fontSize:12,color:OR}}>helloistenhozott@gmail.com →</div>
+          </div>
+          <Annot>ScrollTrigger: bal-zárt text reveal, soronként. Hover: kurzor köré subtle OR glow. Optional: tiny hamburger menu overlay contact formhoz.</Annot>
+        </div>
+
+      </div>
+    );
+  };
+
+
+  // ─────────────────────────────────────────────
+  // WIREFRAME C — ARCHÍV (The Archive)
+  // ─────────────────────────────────────────────
+  const WireframeC = () => {
+    const p = { padding:'0 15px' };
+    return (
+      <div style={{background:BG,width:'100%',color:FG,paddingTop:14}}>
+
+        <div style={p}>
+          <ConceptBadge letter="C" name="ARCHÍV" desc="Szöveg-elsőbbség. Kép nélküli hero, csak a betűk. Sticky work-browser. Filmrendező öntudat. Legunikusabb irány."/>
+        </div>
+
+        {/* 00 LOADER */}
+        <div style={p}>
+          <SecLabel num="00" label="Loader — Számláló"/>
+          <div style={{height:96,border:`1px dashed ${GRAY}`,borderRadius:2,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:8}}>
+            <div style={{fontFamily:'Space Mono,monospace',fontWeight:700,fontSize:32,color:'rgba(240,237,230,0.12)',letterSpacing:'-0.02em',lineHeight:1}}>008</div>
+            <div style={{fontFamily:'Caveat',fontSize:10,color:'rgba(236,114,0,0.5)'}}>számlálás indul...</div>
+          </div>
+          <Annot>GSAP: 001→008 counter typewriter (100ms/szám). Mindegyik: fadeIn + fadeOut. onComplete: smooth fade-out egész screen → hero betűk clipből jönnek be.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 01 TYPOGRAPHIC HERO */}
+        <div style={p}>
+          <SecLabel num="01" label="Hero — Pure Typography"/>
+          <div style={{height:234,border:`1px dashed ${GRAY}`,borderRadius:2,overflow:'hidden',padding:12,display:'flex',flexDirection:'column',justifyContent:'space-between',position:'relative'}}>
+            <NavBar style={{background:'transparent',padding:'7px 0',borderBottom:'1px solid rgba(240,237,230,0.08)',marginBottom:0}}/>
+            <div style={{flex:1,display:'flex',flexDirection:'column',justifyContent:'center',gap:8}}>
+              <BigType size={46} style={{lineHeight:0.82,letterSpacing:'-0.04em'}}>ISTEN<br/>HOZOTT®</BigType>
+              <Bar w={22}/>
+              <div style={{fontFamily:'Caveat',fontSize:11,color:'rgba(240,237,230,0.48)',fontStyle:'italic',maxWidth:210}}>
+                Vizuális történetmesélő kollektíva.<br/>Budapest, 2023 —
+              </div>
+            </div>
+            <div style={{display:'flex',gap:10}}>
+              <Chip>↓ MUNKÁINK (8)</Chip>
+              <Chip>INSTAGRAM →</Chip>
+            </div>
+          </div>
+          <Annot>GSAP SplitText: per-letter stagger (18ms), random delay 0–280ms. NEM tween — clip-path charOnként. Semmi kép, semmi fotó. Az erő a betűkből jön.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 02 STICKY WORK BROWSER */}
+        <div style={p}>
+          <SecLabel num="02" label="Munkák — Sticky Browse"/>
+          <div style={{height:222,border:`1px dashed ${GRAY}`,borderRadius:2,overflow:'hidden',display:'flex'}}>
+            {/* Left sticky */}
+            <div style={{flex:'0 0 46%',borderRight:`1px dashed ${GRAY}`,padding:10,display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
+              <div>
+                <Mono style={{color:'rgba(236,114,0,0.6)',display:'block',marginBottom:5}}>01 / 08</Mono>
+                <BigType size={13} style={{lineHeight:1.05,marginBottom:8}}>MÉLYVÍZ —<br/>VV KRISZTI</BigType>
+                <Chip>MÉLYVÍZ</Chip>
+                <div style={{marginTop:8}}>
+                  <TxtLine w="90%" op={0.17}/>
+                  <TxtLine w="70%" op={0.12}/>
+                </div>
+              </div>
+              <div>
+                <div style={{display:'flex',justifyContent:'space-between',marginBottom:6}}>
+                  <Mono style={{fontSize:7}}>← ELŐZŐ</Mono>
+                  <Mono style={{fontSize:7}}>KÖVETKEZŐ →</Mono>
+                </div>
+                <Chip active>Megnézem →</Chip>
+              </div>
+            </div>
+            {/* Right image changes */}
+            <div style={{flex:1,position:'relative'}}>
+              <ImgBox w="100%" h={222} label="KÉP VÁLTAKOZIK SCROLLRA" style={{border:'none',borderRadius:0,fontSize:9}}/>
+              <div style={{position:'absolute',bottom:8,left:'50%',transform:'translateX(-50%)',display:'flex',gap:5}}>
+                {[0,1,2,3,4,5,6,7].map(i=>(
+                  <div key={i} style={{width:i===0?12:4,height:3,borderRadius:2,background:i===0?OR:'rgba(240,237,230,0.2)'}}/>
+                ))}
+              </div>
+            </div>
+          </div>
+          <Annot>position:sticky bal panel. ScrollTrigger: 8×100vh szekció. Minden 100vh: gsap.set (bal szöveg crossfade + jobb kép opacity+scale csere). Elegant, lassú.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 03 STATS */}
+        <div style={p}>
+          <SecLabel num="03" label="Számok — Stats Interlude"/>
+          <div style={{height:100,background:'rgba(58,10,24,0.35)',border:`1px solid rgba(58,10,24,0.7)`,borderRadius:2,display:'flex',alignItems:'center',justifyContent:'space-around',padding:'0 10px'}}>
+            {[['17 350','KÖVETŐ'],['4,47%','MEDIÁN ER'],['1 049 803','IG MEGJELENÍTÉS']].map(([n,l])=>(
+              <div key={l} style={{textAlign:'center'}}>
+                <div style={{fontFamily:'Big Shoulders Display,sans-serif',fontWeight:900,fontSize:28,color:FG,lineHeight:1}}>
+                  {n}
+                </div>
+                <Mono style={{fontSize:7,display:'block',marginTop:3}}>{l}</Mono>
+              </div>
+            ))}
+          </div>
+          <Annot>ScrollTrigger onEnter: CountUp animation (GSAP numTo). Háttér: fekete→burgundy scrub. Kilépésre: visszafeketedik.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 04 CAROUSEL PREVIEW */}
+        <div style={p}>
+          <SecLabel num="04" label="Instagram Preview — Carousel"/>
+          <div style={{height:160,border:`1px dashed ${GRAY}`,borderRadius:2,display:'flex',alignItems:'center',gap:14,padding:12,overflow:'hidden'}}>
+            {/* Phone mockup */}
+            <div style={{width:60,height:120,border:`2px solid rgba(240,237,230,0.22)`,borderRadius:8,overflow:'hidden',flexShrink:0,display:'flex',flexDirection:'column'}}>
+              <div style={{height:5,background:'rgba(240,237,230,0.08)',flexShrink:0,position:'relative'}}>
+                <div style={{position:'absolute',top:'50%',left:'50%',transform:'translate(-50%,-50%)',width:10,height:1.5,background:'rgba(240,237,230,0.15)',borderRadius:1}}/>
+              </div>
+              <ImgBox w="100%" h={115} label="CAROUSEL" style={{border:'none',borderRadius:0,fontSize:8}}/>
+            </div>
+            <div style={{flex:1}}>
+              <BigType size={13} style={{marginBottom:6}}>VIZUÁLIS ESSZÉK</BigType>
+              <TxtLine w="88%" h={6} op={0.2}/>
+              <TxtLine w="65%" h={6} op={0.14}/>
+              <div style={{marginTop:10,display:'flex',gap:8}}>
+                <Chip active>INSTAGRAMON →</Chip>
+              </div>
+            </div>
+          </div>
+          <Annot>GSAP: phone slides in y(50→0) + opacity. Carousel slides: CSS animation belül. CTA: IG profil link. Opcionális: live embed IG API-val.</Annot>
+        </div>
+
+        <Hr/>
+
+        {/* 05 PARTNERS */}
+        <div style={p}>
+          <SecLabel num="05" label="Együttműködések"/>
+          <div style={{height:46,border:`1px dashed ${GRAY}`,borderRadius:2,overflow:'hidden',display:'flex',alignItems:'center',padding:'0 12px',gap:22}}>
+            {['HBO','Budapest Park','Dugattyús','Bródy Ház','Hype & Hyper'].map(l=>(
+              <span key={l} style={{flexShrink:0,fontFamily:'Big Shoulders Display,sans-serif',fontWeight:700,fontSize:10,color:'rgba(240,237,230,0.2)',textTransform:'uppercase',letterSpacing:'0.1em'}}>{l}</span>
+            ))}
+          </div>
+        </div>
+
+        <Hr/>
+
+        {/* 06 CTA */}
+        <div style={{...p,paddingBottom:18}}>
+          <SecLabel num="06" label="CTA — Centered Kérdőmondat"/>
+          <div style={{height:144,border:`1px solid rgba(236,114,0,0.15)`,borderRadius:2,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:9,textAlign:'center'}}>
+            <BigType size={22} style={{lineHeight:0.9,textAlign:'center'}}>EGYÜTT-<br/>MŰKÖDNÉL?</BigType>
+            <Bar w={18} style={{margin:'2px 0'}}/>
+            <div style={{fontFamily:'Caveat',fontSize:12,color:OR}}>helloistenhozott@gmail.com</div>
+          </div>
+          <Annot>ScrollTrigger: viewport takeover animáció. Kérdőmondat — nem kijelentés. Konzekvens az IH hanghordozásával.</Annot>
+        </div>
+
+      </div>
+    );
+  };
+
+
+  // ─────────────────────────────────────────────
+  // ROOT APP
+  // ─────────────────────────────────────────────
+  function App() {
+    return (
+      <DesignCanvas>
+        <DCSection
+          id="homepage-wf"
+          title="Isten Hozott® — Homepage Wireframes"
+          subtitle="3 layout variáció · Scroll koreográfia · GSAP + Lenis · EN/HU · Kattints az artboardra a fullscreen nézethez"
+        >
+          <DCArtboard id="wf-a" label="A · FOLYAM" width={420} height={1570}>
+            <WireframeA />
+          </DCArtboard>
+          <DCArtboard id="wf-b" label="B · VEKTOR" width={420} height={1530}>
+            <WireframeB />
+          </DCArtboard>
+          <DCArtboard id="wf-c" label="C · ARCHÍV" width={420} height={1510}>
+            <WireframeC />
+          </DCArtboard>
+        </DCSection>
+      </DesignCanvas>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>

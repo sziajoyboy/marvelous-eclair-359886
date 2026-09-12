@@ -1,0 +1,30 @@
+Images detected on the public Framer site but not downloaded by this extraction pass.
+
+homepage/002_home_work_01
+https://framerusercontent.com/images/BYthYgMTljE39wSaaxpSurwMMCg.jpg?height=1080&width=1920
+Reason: served as AVIF by Framer; downloader rejected AVIF
+
+about/004_about_image_03
+https://framerusercontent.com/images/q2JpAGfDdmQrNhwK2G6yToLFZI.jpeg?height=6064&width=4104
+Reason: large image timed out in web fetch; not downloaded
+
+projects/insta-karuzel/003_karuzel_03
+https://framerusercontent.com/images/Thw0iPOso1mCeJ8M99zm8XQN2mM.gif?height=1280&width=720
+Reason: GIF timed out in web fetch; not downloaded
+
+projects/insta-karuzel/005_karuzel_05
+https://framerusercontent.com/images/OlPkm3cVwgEdLI7pHu2nQB079E.gif?height=1280&width=720
+Reason: GIF timed out in web fetch; not downloaded
+
+projects/offline/001_offline_01
+https://framerusercontent.com/images/dFd3udX7XKtoK1VOyEmYsYdlhc.jpg?height=4000&width=6000
+Reason: large image timed out in web fetch; not downloaded
+
+projects/offline/003_offline_03
+https://framerusercontent.com/images/Q9zfUbzv6dPPduskMW4EffBuvRk.jpg?height=3441&width=6000
+Reason: large image timed out in web fetch; not downloaded
+
+projects/spotlight/001_spotlight_01
+https://framerusercontent.com/images/1wBcaY6plgbe0NV9tTBpMilWlvw.jpg?height=3512&width=6240
+Reason: large image timed out in web fetch; not downloaded
+

@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vizuális történetmesélő kollektíva. A kultúra nem információ, hanem narratíva.">
+  <title>Isten Hozott® — Vizuális Történetmesélő Kollektíva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/homepage-v4.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-ring" aria-hidden="true"><span class="cursor-label">Nézd</span></div>
+<div id="cursor-dot" aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-num"><span class="n">00</span><span class="pct">%</span></div>
+  <div class="loader-cap"><span>Isten Hozott® · Budapest · 2023</span></div>
+</div>
+<div class="loader-shutter" aria-hidden="true"></div>
+
+<!-- TWEAKS -->
+<aside id="tweaks" aria-label="Tweaks"></aside>
+
+<!-- NAV -->
+<nav id="nav" aria-label="Főnavigáció">
+  <a href="#hero" class="nav-logo" aria-label="Isten Hozott főoldal">
+    <img src="assets/logo_mark_orange.png" alt="IH">
+    <span class="nav-logo-name">Isten Hozott®</span>
+  </a>
+  <div class="nav-right">
+    <span class="nav-clock" id="navClock">BUDAPEST</span>
+    <a href="#works" class="nav-link"><span data-hu>Munkáink</span><span data-en style="display:none">Works</span></a>
+    <a href="#formats" class="nav-link"><span data-hu>Formátumok</span><span data-en style="display:none">Formats</span></a>
+    <a href="#contact" class="nav-link"><span data-hu>Kapcsolat</span><span data-en style="display:none">Contact</span></a>
+    <button id="lang-btn" aria-label="Nyelv">EN</button>
+    <button class="nav-burger" id="navBurger" aria-label="Menü"><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- FULLSCREEN NAV -->
+<div id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigáció">
+  <div class="navo-links">
+    <p class="navo-meta">Isten Hozott® · Vizuális Történetmesélő Kollektíva</p>
+    <a href="#works" class="navo-link" data-nav-img="works"><span class="li"><span class="idx">01</span><span data-hu>Munkáink</span><span data-en style="display:none">Works</span></span></a>
+    <a href="#formats" class="navo-link" data-nav-img="formats"><span class="li"><span class="idx">02</span><span data-hu>Formátumok</span><span data-en style="display:none">Formats</span></span></a>
+    <a href="#contact" class="navo-link" data-nav-img="contact"><span class="li"><span class="idx">03</span><span data-hu>Kapcsolat</span><span data-en style="display:none">Contact</span></span></a>
+  </div>
+  <div class="navo-img"><img id="navoPhoto" alt=""></div>
+  <button class="navo-close" id="navoClose">ESC / BEZÁR</button>
+  <div class="navo-socials">
+    <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram ↗</a>
+    <a href="https://youtube.com" target="_blank" rel="noopener">YouTube ↗</a>
+  </div>
+</div>
+
+<!-- ════ HERO ════ -->
+<section id="hero" data-hero="marquee" data-screen-label="Hero" aria-label="Hero">
+  <div class="hero-bg">
+    <img class="hero-img" src="https://framerusercontent.com/images/8UVjX99qd0GNo0LFNI8czNm8c.jpg?scale-down-to=2048" alt="Isten Hozott — Budapest" loading="eager" fetchpriority="high">
+    <div class="hero-scrim"></div>
+    <div id="hero-grain"></div>
+  </div>
+
+  <div class="hero-meta-top">
+    <span class="hero-eyebrow"><span data-hu>Vizuális Történetmesélő Kollektíva</span><span data-en style="display:none">Visual Storytelling Collective</span></span>
+    <span class="hero-loc">Budapest · É 47.49° K 19.04°</span>
+  </div>
+
+  <!-- A — MARQUEE -->
+  <div class="hero-variant hv-marquee">
+    <div class="hm-track"><span class="hm-line">ISTEN&nbsp;<span class="out">HOZOTT</span><span class="reg">®</span></span></div>
+    <p class="hm-sub"><span data-hu>Kutatás, sűrítés, vizualizáció — a kultúra nem információ, hanem narratíva.</span><span data-en style="display:none">Research, distillation, visualisation — culture is not information, it is narrative.</span></p>
+  </div>
+
+  <!-- B — STACK -->
+  <div class="hero-variant hv-stack">
+    <div class="hs-word"><span class="si">ISTEN</span></div>
+    <div class="hs-slit"><img src="https://framerusercontent.com/images/8UVjX99qd0GNo0LFNI8czNm8c.jpg?scale-down-to=2048" alt=""></div>
+    <div class="hs-word"><span class="si">HOZOTT<span class="reg">®</span></span></div>
+    <p class="hs-sub"><span data-hu>Vizuális történetmesélő kollektíva · Budapest</span><span data-en style="display:none">Visual storytelling collective · Budapest</span></p>
+  </div>
+
+  <!-- C — INDEX -->
+  <div class="hero-variant hv-index">
+    <div class="hi-left">
+      <div class="hi-num">№ 2023 — BUDAPEST</div>
+      <h1 class="hi-title">ISTEN<br>HOZOTT<span class="reg">®</span></h1>
+      <div class="hi-rule"></div>
+      <p class="hi-sub"><span data-hu>Kutatás, sűrítés, vizualizáció. A kultúra nem információ, hanem narratíva.</span><span data-en style="display:none">Research, distillation, visualisation. Culture is not information, it is narrative.</span></p>
+    </div>
+    <div class="hi-right">
+      <img src="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=900" alt="Mélyvíz">
+      <span class="hi-cap">Mélyvíz — Budapest, 2025</span>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><div class="scroll-cue-line"></div><span class="scroll-cue-label"><span data-hu>Görgess</span><span data-en style="display:none">Scroll</span></span></div>
+</section>
+
+<!-- ════ VELOCITY STRIP ════ -->
+<div class="velo-strip" aria-hidden="true"><div class="velo-track" id="velo1"></div></div>
+
+<!-- ════ WORKS ════ -->
+<section id="works" data-screen-label="Munkáink" aria-label="Munkáink">
+  <div class="works-stage">
+    <div class="works-ghost">01</div>
+    <div class="works-head-abs">
+      <div class="sec-head-l">
+        <span class="sec-eyebrow">№ 01</span>
+        <h2 class="sec-title"><span data-hu>Munkáink</span><span data-en style="display:none">Works</span></h2>
+      </div>
+      <span class="sec-count">(08)</span>
+    </div>
+    <div class="works-track" id="worksTrack"></div>
+    <div class="works-drag"><span data-hu>Görgess oldalra</span><span data-en style="display:none">Scroll sideways</span><span class="bar"></span></div>
+    <div id="works-prog" style="position:absolute;bottom:0;left:0;right:0;height:2px;"></div>
+  </div>
+</section>
+
+<!-- ════ MANIFESTO ════ -->
+<section id="manifesto" data-screen-label="Manifesztó" aria-label="Manifesztó">
+  <div class="mani-pin">
+    <div class="mani-ghost">IH</div>
+    <div class="mani-inner">
+      <span class="mani-eyebrow"><span data-hu>Elvek — № 02</span><span data-en style="display:none">Principles — № 02</span></span>
+      <p class="mani-body" id="maniBody"></p>
+      <div class="mani-foot">
+        <span class="bar"></span>
+        <p><span data-hu>Budapest, 2023 — Kutatás, sűrítés, vizualizáció.</span><span data-en style="display:none">Budapest, 2023 — Research, distillation, visualisation.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FORMATS ════ -->
+<section id="formats" data-screen-label="Formátumok" aria-label="Formátumok">
+  <div class="sec-head">
+    <div class="sec-head-l">
+      <span class="sec-eyebrow">№ 03</span>
+      <h2 class="sec-title"><span data-hu>Formátumok</span><span data-en style="display:none">Formats</span></h2>
+    </div>
+    <p class="sec-note"><span data-hu>Hat forma, egy gondolat: a figyelem mint érték.</span><span data-en style="display:none">Six forms, one idea: attention as value.</span></p>
+  </div>
+  <div class="fmt-list" id="fmtList"></div>
+</section>
+
+<!-- ════ MOMENTS ════ -->
+<section id="moments" aria-label="Pillanatok">
+  <div id="momentsInner"></div>
+</section>
+
+<!-- ════ STATS ════ -->
+<section id="stats" data-screen-label="Számok" aria-label="Számok">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-num" id="stat-0">0</div><span class="stat-label"><span data-hu>Projekt 2023 óta</span><span data-en style="display:none">Projects since 2023</span></span></div>
+    <div class="stat"><div class="stat-num" id="stat-1">0</div><span class="stat-label"><span data-hu>Instagram követő</span><span data-en style="display:none">Instagram followers</span></span></div>
+    <div class="stat"><div class="stat-num" id="stat-2">0</div><span class="stat-label"><span data-hu>Átlag elköteleződés</span><span data-en style="display:none">Avg. engagement</span></span></div>
+  </div>
+</section>
+
+<!-- ════ ESSAYS ════ -->
+<section id="essays" data-screen-label="Vizuális Esszék" aria-label="Vizuális Esszék">
+  <div class="sec-head">
+    <div class="sec-head-l">
+      <span class="sec-eyebrow">№ 04</span>
+      <h2 class="sec-title"><span data-hu>Vizuális Esszék</span><span data-en style="display:none">Visual Essays</span></h2>
+    </div>
+    <span class="sec-count">@isten.hozott</span>
+  </div>
+  <div class="essays-grid" id="essaysGrid"></div>
+</section>
+
+<!-- ════ WORK LIST ════ -->
+<section id="work-list" data-screen-label="Munkák lista" aria-label="Projektek listája">
+  <div class="sec-head">
+    <div class="sec-head-l">
+      <span class="sec-eyebrow">№ 05</span>
+      <h2 class="sec-title"><span data-hu>Index</span><span data-en style="display:none">Index</span></h2>
+    </div>
+    <span class="sec-count">(08)</span>
+  </div>
+  <div class="wl" id="workList"></div>
+  <a href="#" class="wl-all magnetic"><span data-hu>Összes projekt</span><span data-en style="display:none">All projects</span><span aria-hidden="true">→</span></a>
+</section>
+
+<!-- ════ SOCIAL ════ -->
+<section id="social" data-screen-label="Instagram" aria-label="Instagram">
+  <div class="sec-head">
+    <div class="sec-head-l">
+      <span class="sec-eyebrow">№ 06</span>
+      <h2 class="sec-title">@isten.hozott</h2>
+    </div>
+    <span class="sec-count">17 350</span>
+  </div>
+  <div class="social-grid" id="socialGrid"></div>
+  <a href="https://instagram.com/isten.hozott" class="social-cta magnetic" target="_blank" rel="noopener"><span data-hu>Kövess Instagramon</span><span data-en style="display:none">Follow on Instagram</span><span aria-hidden="true">→</span></a>
+</section>
+
+<!-- ════ CTA ════ -->
+<section id="contact" data-screen-label="Kapcsolat" aria-label="Kapcsolat">
+  <div class="cta-marquee" id="ctaMarquee" aria-hidden="true"></div>
+  <p class="cta-label"><span data-hu>Kontakt — Dolgozzunk együtt</span><span data-en style="display:none">Contact — Let's work together</span></p>
+  <h2 class="cta-title">
+    <span class="line"><span class="li"><span data-hu>VAN EGY</span><span data-en style="display:none">GOT AN</span></span></span>
+    <span class="line"><span class="li"><span data-hu>ÖTLETED</span><span data-en style="display:none">IDEA</span></span></span>
+  </h2>
+  <div class="cta-divider"></div>
+  <div class="cta-mag"><a href="mailto:helloistenhozott@gmail.com" class="cta-email">helloistenhozott@gmail.com</a></div>
+</section>
+
+<!-- FOOTER STATEMENT -->
+<div class="foot-statement">
+  <p><span data-hu><em>A kultúra nem tűnik el.</em> Csak új formát vesz fel.</span><span data-en style="display:none"><em>Culture does not disappear.</em> It only takes new form.</span></p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-brand"><img src="assets/logo_mark_orange.png" alt="IH"><span class="foot-brand-name">Isten Hozott®</span></div>
+  <span class="foot-copy">© 2026 Isten Hozott® · Budapest</span>
+  <div class="foot-links">
+    <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<!-- CURSOR PREVIEWS -->
+<div id="fmt-cursor-img" aria-hidden="true"><img alt=""></div>
+<div id="wl-cursor-img" aria-hidden="true"><img alt=""></div>
+
+<!-- MANIFESTO TEXT (split by JS) -->
+<script type="application/json" id="mani-text">
+{"hu":"A kultúra nem információ, hanem narratíva. Történetek, amiket azért mesélünk el, mert rezonálnak — nem mert trendek.","en":"Culture is not information, it is narrative. Stories we tell because they resonate — not because they trend."}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/v4-grain.js"></script>
+<script src="js/v4-data.js"></script>
+<script src="js/v4-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Munkáink — kulturális narratívák vizuális építése. Interjúk, spotlight sorozatok, esszék és eseménydokumentáció.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Munkáink — Isten Hozott®">
+  <meta property="og:description" content="Kulturális narratívák vizuális építése. Interjúk, spotlight sorozatok, esszék és eseménydokumentáció.">
+  <meta property="og:image" content="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=1200">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Munkáink — Isten Hozott®">
+  <meta name="twitter:description" content="Kulturális narratívák vizuális építése. Interjúk, spotlight sorozatok, esszék és eseménydokumentáció.">
+  <meta name="twitter:image" content="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=1200">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="icon" type="image/png"     href="../assets/logo_mark_orange.png" sizes="any">
+  <title>Munkáink — Isten Hozott®</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&family=Big+Shoulders+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/homepage-v6.css">
+  <link rel="stylesheet" href="../styles/work.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-ring" aria-hidden="true"><span class="cursor-label">Nézd</span></div>
+<div id="cursor-dot" aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo"><img src="../assets/logo_mark_orange.png" alt="IH"></div>
+  <span class="ld-brand">Munkáink · Isten Hozott® · 2026</span>
+  <div class="ld-num"><span class="n">00</span><span class="pct">%</span></div>
+</div>
+<div class="ld-shutter" aria-hidden="true"></div>
+
+<!-- TWEAKS -->
+<aside id="tweaks" aria-label="Tweaks"></aside>
+
+<!-- EDGE TEXT -->
+<div class="edge-text-wrap" aria-hidden="true">
+  <span class="edge-text">MUNKÁINK — № 01–10 · KULTURÁLIS NARRATÍVÁK · BUDAPEST · 2026</span>
+</div>
+
+<!-- ════ NAV ════ -->
+<nav id="nav" aria-label="Főnavigáció">
+  <a href="../Homepage v7.html" class="nav-logo" aria-label="Isten Hozott főoldal">
+    <img src="../assets/logo_mark_orange.png" alt="IH">
+    <span>Isten Hozott®</span>
+  </a>
+  <div class="nav-right">
+    <span class="nav-clock" id="navClock">BUDAPEST</span>
+    <a href="index.html" class="nav-link">Munkáink</a>
+    <a href="../Homepage v7.html#contact" class="nav-link">Kapcsolat</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menü"><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ════ NAV OVERLAY ════ -->
+<div id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigáció">
+  <div class="navo-links">
+    <p class="navo-meta">Isten Hozott® · Vizuális Történetmesélő Kollektíva</p>
+    <a href="../Homepage v7.html" class="navo-link" data-nav-img="https://framerusercontent.com/images/8UVjX99qd0GNo0LFNI8czNm8c.jpg?width=900">
+      <span class="li"><span class="idx">00</span>Főoldal</span>
+    </a>
+    <a href="index.html" class="navo-link" data-nav-img="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=900">
+      <span class="li"><span class="idx">01</span>Munkáink</span>
+    </a>
+    <a href="../Homepage v7.html#contact" class="navo-link" data-nav-img="https://framerusercontent.com/images/Byl4YTOuagYTavVrHpR20YtQfc0.jpg?width=900">
+      <span class="li"><span class="idx">02</span>Kapcsolat</span>
+    </a>
+  </div>
+  <div class="navo-img"><img id="navoPhoto" alt=""></div>
+  <button class="navo-close" id="navoClose">ESC / BEZÁR</button>
+  <div class="navo-socials">
+    <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram ↗</a>
+    <a href="https://www.youtube.com/@IstenHozott-yt" target="_blank" rel="noopener">YouTube ↗</a>
+  </div>
+</div>
+
+<!-- ════ INTRO — typographic, no hero image ════ -->
+<section class="wl-intro" data-screen-label="Munkáink — fejléc">
+  <div class="wl-intro-head">
+    <span class="wl-intro-eyebrow">Isten Hozott® · Index</span>
+    <span class="wl-intro-folio">Budapest · 2026</span>
+  </div>
+  <h1 class="wl-intro-title sec-title">MUNKÁINK</h1>
+  <div class="wl-intro-foot">
+    <div class="wl-intro-rule"></div>
+    <span class="wl-intro-sub">Kulturális narratívák vizuális építése · № 01–10 · HBO-tól Instagramig · Tíz projekt, egy gondolat</span>
+  </div>
+</section>
+
+<!-- ════ FILTERS ════ -->
+<div class="wl-filters" id="wlFilters">
+  <div class="wl-ftags">
+    <button class="wl-ftag on" data-filter="all">MIND</button>
+    <span class="wl-fsep" aria-hidden="true">·</span>
+    <button class="wl-ftag" data-filter="Interjú">INTERJÚ</button>
+    <span class="wl-fsep" aria-hidden="true">·</span>
+    <button class="wl-ftag" data-filter="Élő">ÉLŐ</button>
+    <span class="wl-fsep" aria-hidden="true">·</span>
+    <button class="wl-ftag" data-filter="Esszé">ESSZÉ</button>
+    <span class="wl-fsep" aria-hidden="true">·</span>
+    <button class="wl-ftag" data-filter="Esemény">ESEMÉNY</button>
+    <span class="wl-fsep" aria-hidden="true">·</span>
+    <button class="wl-ftag" data-filter="Portré">PORTRÉ</button>
+  </div>
+  <span class="wl-fcount" id="wlCount">10 projekt</span>
+</div>
+
+<!-- ════ EDITORIAL LIST ════ -->
+<main class="wl-list" id="wlList" data-reveal="up" data-children data-stagger="0.07" data-start="top 92%">
+
+  <a href="melyviz-vvkriszti.html" class="wl-row" data-cat="Interjú"
+     data-img="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="01 — Mélyvíz VV Kriszti">
+    <span class="wl-row-num">01</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">MÉLYVÍZ — VV KRISZTI</span>
+      <span class="wl-row-sub">Hosszú, csendes interjú — a Soft White Underbelly hagyományában, magyar kontextusban.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Interjú</span>
+      <span class="wl-row-year">2025</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">01</span>
+  </a>
+
+  <a href="beton-hofi-tarr-bela.html" class="wl-row" data-cat="Interjú"
+     data-img="https://framerusercontent.com/images/A1yK24W4WuWxjSo8rbwP3UbdPTY.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="02 — Beton Hofi × Tarr Béla">
+    <span class="wl-row-num">02</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">BETON HOFI × TARR BÉLA</span>
+      <span class="wl-row-sub">Két különböző világ, egy asztal — van-e közük egymáshoz?</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Interjú</span>
+      <span class="wl-row-year">2025</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">02</span>
+  </a>
+
+  <a href="cnzura-xxl.html" class="wl-row" data-cat="Élő"
+     data-img="https://framerusercontent.com/images/z7M2jAMFfwiRk7ln6gBvyig0ZxM.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="03 — C*nzura XXL">
+    <span class="wl-row-num">03</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">C*NZURA XXL</span>
+      <span class="wl-row-sub">Élő kerekasztal a szólásszabadság, az algoritmusok és a kulturális tabu határain.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Élő</span>
+      <span class="wl-row-year">2025</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">03</span>
+  </a>
+
+  <a href="vizualis-esszek.html" class="wl-row" data-cat="Esszé"
+     data-img="https://framerusercontent.com/images/L6cOlkU05Yo5AvSc83D3jWl1Tkc.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="04 — Vizuális Esszék">
+    <span class="wl-row-num">04</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">VIZUÁLIS ESSZÉK</span>
+      <span class="wl-row-sub">Instagram-sorozat: vizuális kommentárok, amelyek nem magyaráznak — csak felteszik a kérdést.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Esszé</span>
+      <span class="wl-row-year">2025</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">04</span>
+  </a>
+
+  <a href="kepes-interjuk.html" class="wl-row" data-cat="Esszé"
+     data-img="https://framerusercontent.com/images/qMH3bZLuxzBTJejxgbJgyX4RU.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="05 — Képes Interjúk">
+    <span class="wl-row-num">05</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">KÉPES INTERJÚK</span>
+      <span class="wl-row-sub">Kézi kamera, nincs forgatókönyv. Fesztiválokon, pop-upokon, brand activationökön.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Esszé</span>
+      <span class="wl-row-year">2024</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">05</span>
+  </a>
+
+  <a href="offline-dugattyus.html" class="wl-row" data-cat="Esemény"
+     data-img="https://framerusercontent.com/images/RY3pB8nLBX0VONPHq6ZJVUlxoLA.png?width=900"
+     data-cursor="Megnézem" data-screen-label="06 — Offline Dugattyús">
+    <span class="wl-row-num">06</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">OFFLINE — DUGATTYÚS</span>
+      <span class="wl-row-sub">Kéthetente ingyenes vetítés. Lassú mozi. Utána: közös gondolkodás, nem elemzés.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Esemény</span>
+      <span class="wl-row-year">2024</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">06</span>
+  </a>
+
+  <a href="spotlight.html" class="wl-row" data-cat="Portré"
+     data-img="https://framerusercontent.com/images/6H2yRVoHHykG9c79hi2W40X4QGs.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="07 — Spotlight">
+    <span class="wl-row-num">07</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">SPOTLIGHT</span>
+      <span class="wl-row-sub">Alkotói portrék Instagram-karuszelen — fotósok, rendezők, tetoválóművészek. Szokatlan kérdések.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Portré</span>
+      <span class="wl-row-year">2024</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">07</span>
+  </a>
+
+  <a href="pogany-indulo-hbo.html" class="wl-row" data-cat="Interjú"
+     data-img="https://framerusercontent.com/images/gGXLpmMOtIRg7NR32mrquUsXU.jpeg?width=900"
+     data-cursor="Megnézem" data-screen-label="08 — Pogány Induló HBO">
+    <span class="wl-row-num">08</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">POGÁNY INDULÓ × HBO</span>
+      <span class="wl-row-sub">A Pogány Induló sorozat mögötti gondolkodás — alkotói szabadság és platform-valóság.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Interjú</span>
+      <span class="wl-row-year">2023</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">08</span>
+  </a>
+
+  <a href="rendszerbonto.html" class="wl-row" data-cat="Interjú"
+     data-img="https://framerusercontent.com/images/z7M2jAMFfwiRk7ln6gBvyig0ZxM.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="09 — Rendszerbontó">
+    <span class="wl-row-num">09</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">RENDSZERBONTÓ</span>
+      <span class="wl-row-sub">Puzsér Róbert és Jakab Péter — mi töri meg a rendszert belülről?</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Interjú</span>
+      <span class="wl-row-year">2024</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">09</span>
+  </a>
+
+  <a href="fekete-giorgo-5-kotelezo.html" class="wl-row" data-cat="Portré"
+     data-img="https://framerusercontent.com/images/6H2yRVoHHykG9c79hi2W40X4QGs.jpg?width=900"
+     data-cursor="Megnézem" data-screen-label="10 — Fekete Giorgo 5 Kötelező">
+    <span class="wl-row-num">10</span>
+    <div class="wl-row-body">
+      <span class="wl-row-title">FEKETE GIORGO — 5 KÖTELEZŐ</span>
+      <span class="wl-row-sub">Öt dolog, öt kategória — egy ember belső térképe az alkotásról.</span>
+    </div>
+    <div class="wl-row-right">
+      <span class="wl-row-cat">Portré</span>
+      <span class="wl-row-year">2024</span>
+    </div>
+    <span class="wl-row-arr" aria-hidden="true">↗</span>
+    <span class="wl-row-ghost" aria-hidden="true">10</span>
+  </a>
+
+</main>
+
+<!-- Floating cursor image preview -->
+<div class="wl-preview" id="wlPreview" aria-hidden="true">
+  <img id="wlPreviewImg" alt="">
+</div>
+
+<!-- Cursor glow -->
+<div class="cursor-glow" id="wlGlow" aria-hidden="true"></div>
+
+<!-- ════ FOOTER ════ -->
+<div class="site-foot">
+  
+  <!-- filmes zárókép — full-bleed háttér -->
+  <div class="foot-bg" aria-hidden="true">
+    <img src="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=1920" alt="" loading="lazy" decoding="async">
+    <div class="foot-bg-scrim"></div>
+  </div>
+
+  <div class="foot-main">
+        <div class="foot-col foot-col-l">
+      <div class="foot-brand-mark">
+        <img src="../assets/logo_mark_orange.png" alt="IH" width="32" height="32">
+        <span class="foot-col-label">Isten Hozott®</span>
+      </div>
+      <nav class="foot-nav-big">
+        <a href="../Homepage v7.html">Főoldal</a>
+        <a href="index.html">Munkáink</a>
+        <a href="../Homepage v7.html#formats">Formátumok</a>
+        <a href="../Homepage v7.html#essays">Esszék</a>
+        <a href="../Homepage v7.html#partners">Partnerek</a>
+        <a href="../Homepage v7.html#contact" class="foot-nav-accent">Kapcsolat</a>
+      </nav>
+    </div>
+    <div class="foot-col foot-col-c">
+      <div class="foot-vis" data-reveal="wipe-up">
+        <img class="breathe" src="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=900" alt="Isten Hozott — Budapest" loading="lazy">
+        <div class="foot-vis-scrim"></div>
+      </div>
+      <a href="mailto:helloistenhozott@gmail.com" class="foot-contact-btn" data-magnetic="12">
+        helloistenhozott@gmail.com <span class="foot-btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+    <div class="foot-col foot-col-r">
+      <p class="foot-tagline">Vizuális<br>történetmesélés<br>Budapest szívéből.</p>
+      <div class="foot-social-wrap">
+        <nav class="foot-social-big">
+          <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/@IstenHozott-yt" target="_blank" rel="noopener">YouTube</a>
+        </nav>
+        <div class="foot-social-stats"><span>17 350 követő</span><span>4,47% ER</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot-logos-strip" aria-label="Partnerek">
+    <div class="foot-logos-track">
+      <span class="logo-mq-item">HBO</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Recorder</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Budapest Park</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Hype &amp; Hyper</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Magyar Narancs</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Dugattyús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Bródy Ház</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Tilos Rádió</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Friss Hús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">HBO</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Recorder</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Budapest Park</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Hype &amp; Hyper</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Magyar Narancs</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Dugattyús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Bródy Ház</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Tilos Rádió</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Friss Hús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+    </div>
+  </div>
+  <footer>
+    <div class="foot-brand"><img src="../assets/logo_mark_orange.png" alt="IH"><span>Isten Hozott®</span></div>
+    <span class="foot-copy">© 2026 Isten Hozott® · Budapest</span>
+    <div class="foot-links">
+      <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@IstenHozott-yt" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </footer>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="../js/v4-grain.js"></script>
+<script src="../js/page-core.js"></script>
+<script>
+/* ─── CURSOR IMAGE PREVIEW ─── */
+(function () {
+  if (window.matchMedia('(hover: none)').matches) return;
+  var preview = document.getElementById('wlPreview');
+  var img = document.getElementById('wlPreviewImg');
+  if (!preview || !img) return;
+
+  function setup() {
+    var qx = gsap.quickTo(preview, 'x', { duration: .48, ease: 'power3.out' });
+    var qy = gsap.quickTo(preview, 'y', { duration: .36, ease: 'power3.out' });
+    window.addEventListener('mousemove', function (e) {
+      qx(e.clientX + 28);
+      qy(e.clientY - 90);
+    });
+    document.querySelectorAll('.wl-row[data-img]').forEach(function (row) {
+      row.addEventListener('mouseenter', function () {
+        img.src = row.dataset.img;
+        gsap.to(preview, {
+          opacity: 1, clipPath: 'inset(0 0% 0 0)',
+          duration: .52, ease: 'power3.out'
+        });
+      });
+      row.addEventListener('mouseleave', function () {
+        gsap.to(preview, {
+          opacity: 0, clipPath: 'inset(0 100% 0 0)',
+          duration: .32, ease: 'power2.in'
+        });
+      });
+    });
+  }
+
+  if (window.gsap) { setup(); }
+  else { document.addEventListener('DOMContentLoaded', function () { if (window.gsap) setup(); }); }
+})();
+
+/* ─── CURSOR GLOW ─── */
+(function () {
+  if (window.matchMedia('(hover: none)').matches) return;
+  var glow = document.getElementById('wlGlow');
+  if (!glow || !window.gsap) return;
+  var qx = gsap.quickTo(glow, 'x', { duration: .9, ease: 'power3.out' });
+  var qy = gsap.quickTo(glow, 'y', { duration: .7, ease: 'power3.out' });
+  var revealed = false;
+  window.addEventListener('mousemove', function (e) {
+    qx(e.clientX); qy(e.clientY);
+    if (!revealed) { gsap.to(glow, { opacity: 1, duration: .8 }); revealed = true; }
+  }, { passive: true });
+  document.documentElement.addEventListener('mouseleave', function () {
+    gsap.to(glow, { opacity: 0, duration: 1.2 }); revealed = false;
+  });
+})();
+
+/* ─── FILTER COUNTS ─── */
+(function () {
+  var rows = Array.from(document.querySelectorAll('.wl-row[data-cat]'));
+  var counts = {};
+  rows.forEach(function (r) { counts[r.dataset.cat] = (counts[r.dataset.cat] || 0) + 1; });
+  document.querySelectorAll('.wl-ftag[data-filter]').forEach(function (btn) {
+    var f = btn.dataset.filter;
+    if (f === 'all' || !counts[f]) return;
+    var n = document.createElement('span');
+    n.className = 'wl-ftag-n'; n.textContent = counts[f];
+    btn.appendChild(n);
+  });
+})();
+
+/* ─── PAGE TRANSITION ─── */
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) document.body.style.opacity = '';
+  });
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    if (!href || href.startsWith('mailto:') || href.startsWith('http') ||
+        href.startsWith('#') || href.startsWith('//')) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    var dest = link.href;
+    if (!window.gsap) { window.location.href = dest; return; }
+    gsap.to(document.body, {
+      opacity: 0, duration: .32, ease: 'power2.in',
+      onComplete: function () { window.location.href = dest; }
+    });
+  });
+})();
+(function () {
+  var list = document.getElementById('wlList');
+  var filters = document.getElementById('wlFilters');
+  var countEl = document.getElementById('wlCount');
+  if (!list || !filters) return;
+  var rows = Array.from(list.querySelectorAll('.wl-row'));
+
+  filters.addEventListener('click', function (e) {
+    var btn = e.target.closest('.wl-ftag');
+    if (!btn) return;
+    filters.querySelectorAll('.wl-ftag').forEach(function (b) {
+      b.classList.toggle('on', b === btn);
+    });
+    var f = btn.dataset.filter;
+    var n = 0;
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    rows.forEach(function (row, i) {
+      var show = f === 'all' || row.dataset.cat === f;
+      row.hidden = !show;
+      if (show) {
+        n++;
+        if (window.gsap && !reduced) {
+          gsap.fromTo(row,
+            { opacity: 0, y: 22, filter: 'blur(5px)' },
+            { opacity: 1, y: 0, filter: 'blur(0px)', duration: .55, ease: 'power2.out', delay: i * .04 }
+          );
+        }
+      }
+    });
+    if (countEl) {
+      countEl.textContent = String(n).padStart(2, '0') + (f === 'all' ? ' projekt' : ' — ' + f);
+    }
+    if (window.ScrollTrigger) ScrollTrigger.refresh();
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1498 @@
+[
+  {
+    "source": "00_preview_contact_sheet.jpg",
+    "output": "assets/ih-all/00_preview_contact_sheet.webp",
+    "originalBytes": 516940,
+    "outputBytes": 277092,
+    "width": 1100,
+    "height": 2244
+  },
+  {
+    "source": "02_about/about_bw_road_car.webp",
+    "output": "assets/ih-all/02_about/about_bw_road_car.webp",
+    "originalBytes": 105622,
+    "outputBytes": 73452,
+    "width": 586,
+    "height": 780
+  },
+  {
+    "source": "02_about/about_map_budapest.jpg",
+    "output": "assets/ih-all/02_about/about_map_budapest.webp",
+    "originalBytes": 245600,
+    "outputBytes": 173594,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "source": "02_about/about_portrait_black_shirt.webp",
+    "output": "assets/ih-all/02_about/about_portrait_black_shirt.webp",
+    "originalBytes": 6753538,
+    "outputBytes": 773280,
+    "width": 4198,
+    "height": 3973
+  },
+  {
+    "source": "02_about/about_portrait_red_background.webp",
+    "output": "assets/ih-all/02_about/about_portrait_red_background.webp",
+    "originalBytes": 604422,
+    "outputBytes": 296576,
+    "width": 1942,
+    "height": 2589
+  },
+  {
+    "source": "02_about/about_studio_chair_lamp.webp",
+    "output": "assets/ih-all/02_about/about_studio_chair_lamp.webp",
+    "originalBytes": 94944,
+    "outputBytes": 63238,
+    "width": 1056,
+    "height": 1035
+  },
+  {
+    "source": "03_partner_logos/logo_a38.webp",
+    "output": "assets/ih-all/03_partner_logos/logo_a38.webp",
+    "originalBytes": 7748,
+    "outputBytes": 6226,
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "source": "03_partner_logos/logo_beton_hofi.webp",
+    "output": "assets/ih-all/03_partner_logos/logo_beton_hofi.webp",
+    "originalBytes": 24380,
+    "outputBytes": 18322,
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "source": "03_partner_logos/logo_biff.webp",
+    "output": "assets/ih-all/03_partner_logos/logo_biff.webp",
+    "originalBytes": 5972,
+    "outputBytes": 5254,
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "source": "03_partner_logos/logo_bracket_mark_unknown.webp",
+    "output": "assets/ih-all/03_partner_logos/logo_bracket_mark_unknown.webp",
+    "originalBytes": 2328,
+    "outputBytes": 2372,
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "source": "03_partner_logos/logo_budapest_park.webp",
+    "output": "assets/ih-all/03_partner_logos/logo_budapest_park.webp",
+    "originalBytes": 29844,
+    "outputBytes": 21518,
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "source": "03_partner_logos/logo_cenzura.webp",
+    "output": "assets/ih-all/03_partner_logos/logo_cenzura.webp",
+    "originalBytes": 19878,
+    "outputBytes": 15956,
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "source": "03_partner_logos/logo_hbo.webp",
+    "output": "assets/ih-all/03_partner_logos/logo_hbo.webp",
+    "originalBytes": 6830,
+    "outputBytes": 5700,
+    "width": 1000,
+    "height": 1000
+  },
+  {
+    "source": "04_projects/5 Kötelező Giorgio/IMG_3752.JPG",
+    "output": "assets/ih-all/04_projects/5-kotelezo-giorgio/img_3752.webp",
+    "originalBytes": 935818,
+    "outputBytes": 179402,
+    "width": 3520,
+    "height": 1980
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.1.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.1.1.webp",
+    "originalBytes": 1185755,
+    "outputBytes": 58736,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.15.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.15.1.webp",
+    "originalBytes": 4299439,
+    "outputBytes": 85474,
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.25.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.25.1.webp",
+    "originalBytes": 7560921,
+    "outputBytes": 439608,
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.27.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.27.1.webp",
+    "originalBytes": 4119715,
+    "outputBytes": 123172,
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.29.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.29.1.webp",
+    "originalBytes": 3210248,
+    "outputBytes": 73026,
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.32.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.32.1.webp",
+    "originalBytes": 2295168,
+    "outputBytes": 142546,
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.33.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.33.1.webp",
+    "originalBytes": 4154884,
+    "outputBytes": 204574,
+    "width": 2160,
+    "height": 3840
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.5.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.5.1.webp",
+    "originalBytes": 1047342,
+    "outputBytes": 67644,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.5.3.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.5.3.webp",
+    "originalBytes": 1030711,
+    "outputBytes": 59660,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.7.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.7.1.webp",
+    "originalBytes": 963560,
+    "outputBytes": 31550,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.8.1.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.8.1.webp",
+    "originalBytes": 1111048,
+    "outputBytes": 46098,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "source": "04_projects/cenzura-xxl/Still 2025-10-31 104632_1.8.2.jpg",
+    "output": "assets/ih-all/04_projects/cenzura-xxl/still-2025-10-31-104632_1.8.2.webp",
+    "originalBytes": 1007333,
+    "outputBytes": 54362,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0006.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0006.webp",
+    "originalBytes": 38347755,
+    "outputBytes": 703436,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0017.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0017.webp",
+    "originalBytes": 35734529,
+    "outputBytes": 274032,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0025.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0025.webp",
+    "originalBytes": 38126804,
+    "outputBytes": 452792,
+    "width": 6736,
+    "height": 4486
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0029.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0029.webp",
+    "originalBytes": 42808628,
+    "outputBytes": 675932,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0045.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0045.webp",
+    "originalBytes": 38594225,
+    "outputBytes": 659418,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0050.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0050.webp",
+    "originalBytes": 45248430,
+    "outputBytes": 732310,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0052.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0052.webp",
+    "originalBytes": 39631417,
+    "outputBytes": 921722,
+    "width": 6516,
+    "height": 4150
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0059.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0059.webp",
+    "originalBytes": 48202477,
+    "outputBytes": 1024180,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0062W.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0062w.webp",
+    "originalBytes": 37120643,
+    "outputBytes": 780054,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0066.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0066.webp",
+    "originalBytes": 28931265,
+    "outputBytes": 929182,
+    "width": 5322,
+    "height": 3516
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0068s.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0068s.webp",
+    "originalBytes": 40377948,
+    "outputBytes": 808566,
+    "width": 6617,
+    "height": 4203
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0073.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0073.webp",
+    "originalBytes": 39441018,
+    "outputBytes": 774014,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0114.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0114.webp",
+    "originalBytes": 40544934,
+    "outputBytes": 303534,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0142.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0142.webp",
+    "originalBytes": 32798538,
+    "outputBytes": 349718,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0151.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0151.webp",
+    "originalBytes": 31100350,
+    "outputBytes": 211468,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0153.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0153.webp",
+    "originalBytes": 34305843,
+    "outputBytes": 250048,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0161.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0161.webp",
+    "originalBytes": 34347839,
+    "outputBytes": 338200,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0177w.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0177w.webp",
+    "originalBytes": 39897606,
+    "outputBytes": 242300,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0180w.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0180w.webp",
+    "originalBytes": 36347077,
+    "outputBytes": 678028,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0192.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0192.webp",
+    "originalBytes": 36713024,
+    "outputBytes": 491554,
+    "width": 6682,
+    "height": 4406
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0198.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0198.webp",
+    "originalBytes": 33401366,
+    "outputBytes": 652326,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0198w.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0198w.webp",
+    "originalBytes": 33539421,
+    "outputBytes": 651878,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0202.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0202.webp",
+    "originalBytes": 39201461,
+    "outputBytes": 362116,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0211.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0211.webp",
+    "originalBytes": 26160723,
+    "outputBytes": 520110,
+    "width": 6179,
+    "height": 3697
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0222.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0222.webp",
+    "originalBytes": 33622066,
+    "outputBytes": 398854,
+    "width": 6602,
+    "height": 4284
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_0249.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_0249.webp",
+    "originalBytes": 41787433,
+    "outputBytes": 499930,
+    "width": 6639,
+    "height": 4442
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9285.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9285.webp",
+    "originalBytes": 23758633,
+    "outputBytes": 358248,
+    "width": 3919,
+    "height": 5693
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9292.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9292.webp",
+    "originalBytes": 41943465,
+    "outputBytes": 741656,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9309.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9309.webp",
+    "originalBytes": 36263293,
+    "outputBytes": 450662,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9321.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9321.webp",
+    "originalBytes": 33658559,
+    "outputBytes": 492236,
+    "width": 4356,
+    "height": 6648
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9338.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9338.webp",
+    "originalBytes": 31972122,
+    "outputBytes": 302658,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9359w.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9359w.webp",
+    "originalBytes": 39885478,
+    "outputBytes": 708016,
+    "width": 4402,
+    "height": 6678
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9391.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9391.webp",
+    "originalBytes": 17011715,
+    "outputBytes": 715702,
+    "width": 2935,
+    "height": 4623
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9396.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9396.webp",
+    "originalBytes": 31784802,
+    "outputBytes": 370686,
+    "width": 4428,
+    "height": 6696
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9408.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9408.webp",
+    "originalBytes": 36215780,
+    "outputBytes": 473930,
+    "width": 6603,
+    "height": 4498
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9410.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9410.webp",
+    "originalBytes": 41441483,
+    "outputBytes": 679892,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9463.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9463.webp",
+    "originalBytes": 38189050,
+    "outputBytes": 461262,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9468.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9468.webp",
+    "originalBytes": 37917535,
+    "outputBytes": 484330,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9470.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9470.webp",
+    "originalBytes": 39338723,
+    "outputBytes": 530972,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9479.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9479.webp",
+    "originalBytes": 31497712,
+    "outputBytes": 404622,
+    "width": 6552,
+    "height": 4206
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9488.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9488.webp",
+    "originalBytes": 34885197,
+    "outputBytes": 364044,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9508.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9508.webp",
+    "originalBytes": 32667833,
+    "outputBytes": 363800,
+    "width": 4332,
+    "height": 6632
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9526.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9526.webp",
+    "originalBytes": 35557729,
+    "outputBytes": 409032,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9576.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9576.webp",
+    "originalBytes": 31688858,
+    "outputBytes": 325218,
+    "width": 4422,
+    "height": 6692
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9579.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9579.webp",
+    "originalBytes": 41240457,
+    "outputBytes": 786110,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9608.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9608.webp",
+    "originalBytes": 38677094,
+    "outputBytes": 568754,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9608w.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9608w.webp",
+    "originalBytes": 18202384,
+    "outputBytes": 780828,
+    "width": 4500,
+    "height": 3257
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9643.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9643.webp",
+    "originalBytes": 37901146,
+    "outputBytes": 649790,
+    "width": 4464,
+    "height": 6720
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9683.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9683.webp",
+    "originalBytes": 28341779,
+    "outputBytes": 300120,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9697.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9697.webp",
+    "originalBytes": 35385833,
+    "outputBytes": 584666,
+    "width": 4302,
+    "height": 6614
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9718.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9718.webp",
+    "originalBytes": 34255751,
+    "outputBytes": 452574,
+    "width": 6556,
+    "height": 4214
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9734.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9734.webp",
+    "originalBytes": 32396032,
+    "outputBytes": 341650,
+    "width": 4410,
+    "height": 6684
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9738.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9738.webp",
+    "originalBytes": 35695682,
+    "outputBytes": 453968,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9752.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9752.webp",
+    "originalBytes": 34424538,
+    "outputBytes": 481864,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9754.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9754.webp",
+    "originalBytes": 41363177,
+    "outputBytes": 697640,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9766.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9766.webp",
+    "originalBytes": 36911452,
+    "outputBytes": 562868,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9771.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9771.webp",
+    "originalBytes": 34560083,
+    "outputBytes": 702316,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9788s.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9788s.webp",
+    "originalBytes": 44447449,
+    "outputBytes": 586298,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9795.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9795.webp",
+    "originalBytes": 29529163,
+    "outputBytes": 380152,
+    "width": 4200,
+    "height": 6360
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9851.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9851.webp",
+    "originalBytes": 43642672,
+    "outputBytes": 531284,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9860.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9860.webp",
+    "originalBytes": 40539298,
+    "outputBytes": 426960,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9862.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9862.webp",
+    "originalBytes": 37472779,
+    "outputBytes": 445144,
+    "width": 6429,
+    "height": 4184
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9867.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9867.webp",
+    "originalBytes": 42329330,
+    "outputBytes": 363822,
+    "width": 4123,
+    "height": 6638
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9874.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9874.webp",
+    "originalBytes": 41408550,
+    "outputBytes": 358974,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9887.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9887.webp",
+    "originalBytes": 43353587,
+    "outputBytes": 404430,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9908.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9908.webp",
+    "originalBytes": 32994892,
+    "outputBytes": 307492,
+    "width": 6744,
+    "height": 4500
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9918.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9918.webp",
+    "originalBytes": 37981846,
+    "outputBytes": 387936,
+    "width": 4416,
+    "height": 6688
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9926.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9926.webp",
+    "originalBytes": 47662603,
+    "outputBytes": 684818,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9930.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9930.webp",
+    "originalBytes": 31764766,
+    "outputBytes": 205644,
+    "width": 4376,
+    "height": 6662
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9953.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9953.webp",
+    "originalBytes": 50577588,
+    "outputBytes": 569484,
+    "width": 4500,
+    "height": 6744
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9954.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9954.webp",
+    "originalBytes": 32440253,
+    "outputBytes": 540386,
+    "width": 3312,
+    "height": 5963
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/357_9959.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/357_9959.webp",
+    "originalBytes": 40713402,
+    "outputBytes": 604402,
+    "width": 4418,
+    "height": 6068
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/PMPK5094.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/pmpk5094.webp",
+    "originalBytes": 28381056,
+    "outputBytes": 430286,
+    "width": 3932,
+    "height": 5968
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/PMPK5094w.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/pmpk5094w.webp",
+    "originalBytes": 22166411,
+    "outputBytes": 620690,
+    "width": 3641,
+    "height": 5016
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/Still 2026-01-10 233852_1.36.1.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/still-2026-01-10-233852_1.36.1.webp",
+    "originalBytes": 1287374,
+    "outputBytes": 72998,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/Still 2026-01-10 233852_1.38.1.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/still-2026-01-10-233852_1.38.1.webp",
+    "originalBytes": 1109711,
+    "outputBytes": 78438,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/Still 2026-01-10 233852_1.39.1.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/still-2026-01-10-233852_1.39.1.webp",
+    "originalBytes": 1121207,
+    "outputBytes": 77982,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/hofi-tarr-bela/Still 2026-01-10 233852_1.42.1.jpg",
+    "output": "assets/ih-all/04_projects/hofi-tarr-bela/still-2026-01-10-233852_1.42.1.webp",
+    "originalBytes": 562523,
+    "outputBytes": 33082,
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "04_projects/insta-karuzel/1/1.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/1/1.webp",
+    "originalBytes": 1259652,
+    "outputBytes": 107984,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/1/3.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/1/3.webp",
+    "originalBytes": 2068864,
+    "outputBytes": 225698,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/2/60.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/2/60.webp",
+    "originalBytes": 1122049,
+    "outputBytes": 91214,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/2/62.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/2/62.webp",
+    "originalBytes": 1321220,
+    "outputBytes": 110328,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/3/20.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/3/20.webp",
+    "originalBytes": 1358935,
+    "outputBytes": 310668,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/3/21.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/3/21.webp",
+    "originalBytes": 756641,
+    "outputBytes": 99346,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/3/26.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/3/26.webp",
+    "originalBytes": 545273,
+    "outputBytes": 92928,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/4/1.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/4/1.webp",
+    "originalBytes": 1110584,
+    "outputBytes": 55556,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/4/10.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/4/10.webp",
+    "originalBytes": 1751625,
+    "outputBytes": 225192,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/4/4.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/4/4.webp",
+    "originalBytes": 1256012,
+    "outputBytes": 111402,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/5/1.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/5/1.webp",
+    "originalBytes": 669770,
+    "outputBytes": 28642,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/5/10.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/5/10.webp",
+    "originalBytes": 2151366,
+    "outputBytes": 229832,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/5/6.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/5/6.webp",
+    "originalBytes": 560387,
+    "outputBytes": 42372,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/5/8.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/5/8.webp",
+    "originalBytes": 391850,
+    "outputBytes": 89378,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/BIFF/1.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/biff/1.webp",
+    "originalBytes": 2967380,
+    "outputBytes": 303520,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/BIFF/4.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/biff/4.webp",
+    "originalBytes": 1797768,
+    "outputBytes": 59540,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/insta-karuzel/BIFF/6.png",
+    "output": "assets/ih-all/04_projects/insta-karuzel/biff/6.webp",
+    "originalBytes": 2261592,
+    "outputBytes": 93428,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/14.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/14.webp",
+    "originalBytes": 2244294,
+    "outputBytes": 133200,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/15.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/15.webp",
+    "originalBytes": 1901711,
+    "outputBytes": 64644,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/16.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/16.webp",
+    "originalBytes": 2210071,
+    "outputBytes": 107634,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/17.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/17.webp",
+    "originalBytes": 2194928,
+    "outputBytes": 123856,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/18.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/18.webp",
+    "originalBytes": 2114078,
+    "outputBytes": 104778,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/19.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/19.webp",
+    "originalBytes": 2227979,
+    "outputBytes": 121570,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/20.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/20.webp",
+    "originalBytes": 2179073,
+    "outputBytes": 116044,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/21.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/21.webp",
+    "originalBytes": 2304335,
+    "outputBytes": 119152,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/22.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/22.webp",
+    "originalBytes": 2220487,
+    "outputBytes": 125242,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/kepes-interjuk/23.png",
+    "output": "assets/ih-all/04_projects/kepes-interjuk/23.webp",
+    "originalBytes": 2111244,
+    "outputBytes": 105160,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_1.21.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_1.21.1.webp",
+    "originalBytes": 651828,
+    "outputBytes": 71154,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_1.22.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_1.22.1.webp",
+    "originalBytes": 613693,
+    "outputBytes": 55642,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_1.28.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_1.28.1.webp",
+    "originalBytes": 693175,
+    "outputBytes": 67438,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_1.42.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_1.42.1.webp",
+    "originalBytes": 1105771,
+    "outputBytes": 85672,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_1.43.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_1.43.1.webp",
+    "originalBytes": 1117792,
+    "outputBytes": 86464,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.16.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.16.1.webp",
+    "originalBytes": 924167,
+    "outputBytes": 50436,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.41.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.41.1.webp",
+    "originalBytes": 931195,
+    "outputBytes": 68514,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.43.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.43.1.webp",
+    "originalBytes": 825985,
+    "outputBytes": 53666,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.44.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.44.1.webp",
+    "originalBytes": 841896,
+    "outputBytes": 57776,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.45.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.45.1.webp",
+    "originalBytes": 903053,
+    "outputBytes": 60198,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.76.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.76.1.webp",
+    "originalBytes": 1288528,
+    "outputBytes": 79254,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.77.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.77.1.webp",
+    "originalBytes": 1161178,
+    "outputBytes": 38106,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/melyviz-vvkriszti/Still 2026-01-10 232238_2.78.1.jpg",
+    "output": "assets/ih-all/04_projects/melyviz-vvkriszti/still-2026-01-10-232238_2.78.1.webp",
+    "originalBytes": 1411577,
+    "outputBytes": 92234,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source": "04_projects/offline/DSC08132.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08132.webp",
+    "originalBytes": 18606954,
+    "outputBytes": 602752,
+    "width": 6000,
+    "height": 4000
+  },
+  {
+    "source": "04_projects/offline/DSC08136.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08136.webp",
+    "originalBytes": 18678407,
+    "outputBytes": 512108,
+    "width": 6000,
+    "height": 4000
+  },
+  {
+    "source": "04_projects/offline/DSC08140.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08140.webp",
+    "originalBytes": 13755285,
+    "outputBytes": 425328,
+    "width": 5441,
+    "height": 3543
+  },
+  {
+    "source": "04_projects/offline/DSC08159.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08159.webp",
+    "originalBytes": 13286512,
+    "outputBytes": 294748,
+    "width": 6000,
+    "height": 4000
+  },
+  {
+    "source": "04_projects/offline/DSC08165.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08165.webp",
+    "originalBytes": 17902469,
+    "outputBytes": 439152,
+    "width": 3846,
+    "height": 6000
+  },
+  {
+    "source": "04_projects/offline/DSC08171.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08171.webp",
+    "originalBytes": 16823078,
+    "outputBytes": 477572,
+    "width": 6000,
+    "height": 4000
+  },
+  {
+    "source": "04_projects/offline/DSC08190.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08190.webp",
+    "originalBytes": 19763559,
+    "outputBytes": 711992,
+    "width": 6000,
+    "height": 4000
+  },
+  {
+    "source": "04_projects/offline/DSC08223.jpg",
+    "output": "assets/ih-all/04_projects/offline/dsc08223.webp",
+    "originalBytes": 31582714,
+    "outputBytes": 1052344,
+    "width": 6000,
+    "height": 3441
+  },
+  {
+    "source": "04_projects/pogany-indulo/587484800_1400869875372281_3896705483519627494_n.jpg",
+    "output": "assets/ih-all/04_projects/pogany-indulo/587484800_1400869875372281_3896705483519627494_n.webp",
+    "originalBytes": 25878,
+    "outputBytes": 17486,
+    "width": 810,
+    "height": 540
+  },
+  {
+    "source": "04_projects/pogany-indulo/pogany_indulo_group_photo_stairs.webp",
+    "output": "assets/ih-all/04_projects/pogany-indulo/pogany_indulo_group_photo_stairs.webp",
+    "originalBytes": 268982,
+    "outputBytes": 184350,
+    "width": 1079,
+    "height": 1333
+  },
+  {
+    "source": "04_projects/pogany-indulo/pogany_indulo_stage_arms_out.webp",
+    "output": "assets/ih-all/04_projects/pogany-indulo/pogany_indulo_stage_arms_out.webp",
+    "originalBytes": 108878,
+    "outputBytes": 95960,
+    "width": 2000,
+    "height": 1333
+  },
+  {
+    "source": "04_projects/pogany-indulo/pogany_indulo_stage_portrait_blue.webp",
+    "output": "assets/ih-all/04_projects/pogany-indulo/pogany_indulo_stage_portrait_blue.webp",
+    "originalBytes": 45534,
+    "outputBytes": 22964,
+    "width": 1200,
+    "height": 630
+  },
+  {
+    "source": "04_projects/pogany-indulo/Timeline 1_01_00_04_19.jpg",
+    "output": "assets/ih-all/04_projects/pogany-indulo/timeline-1_01_00_04_19.webp",
+    "originalBytes": 1882186,
+    "outputBytes": 85454,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "source": "04_projects/pogany-indulo/Timeline 1_01_00_58_16.jpg",
+    "output": "assets/ih-all/04_projects/pogany-indulo/timeline-1_01_00_58_16.webp",
+    "originalBytes": 2707643,
+    "outputBytes": 113894,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "source": "04_projects/pogany-indulo/Timeline 1_01_02_43_02.jpg",
+    "output": "assets/ih-all/04_projects/pogany-indulo/timeline-1_01_02_43_02.webp",
+    "originalBytes": 1993062,
+    "outputBytes": 58784,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "source": "04_projects/Rendszerbonto/0F3A5453.jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/0f3a5453.webp",
+    "originalBytes": 2155120,
+    "outputBytes": 632338,
+    "width": 5000,
+    "height": 3335
+  },
+  {
+    "source": "04_projects/Rendszerbonto/0F3A5533.jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/0f3a5533.webp",
+    "originalBytes": 2212267,
+    "outputBytes": 271462,
+    "width": 5000,
+    "height": 3335
+  },
+  {
+    "source": "04_projects/Rendszerbonto/354A2497.jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/354a2497.webp",
+    "originalBytes": 1414430,
+    "outputBytes": 119182,
+    "width": 2500,
+    "height": 1667
+  },
+  {
+    "source": "04_projects/Rendszerbonto/354A3236.jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/354a3236.webp",
+    "originalBytes": 2033580,
+    "outputBytes": 135558,
+    "width": 2500,
+    "height": 1667
+  },
+  {
+    "source": "04_projects/Rendszerbonto/354A3484.jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/354a3484.webp",
+    "originalBytes": 2617950,
+    "outputBytes": 258528,
+    "width": 2500,
+    "height": 1668
+  },
+  {
+    "source": "04_projects/Rendszerbonto/DJI_20260410195726_0870_D.jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/dji_20260410195726_0870_d.webp",
+    "originalBytes": 1527404,
+    "outputBytes": 381300,
+    "width": 1280,
+    "height": 959
+  },
+  {
+    "source": "04_projects/Rendszerbonto/Rockstarphotographers_KonczMarton_20260410_0223.JPG",
+    "output": "assets/ih-all/04_projects/rendszerbonto/rockstarphotographers_konczmarton_20260410_0223.webp",
+    "originalBytes": 2310025,
+    "outputBytes": 68682,
+    "width": 3500,
+    "height": 2333
+  },
+  {
+    "source": "04_projects/Rendszerbonto/rockstarphotographers-horvath-andras-20260410-16-34-2.jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/rockstarphotographers-horvath-andras-20260410-16-34-2.webp",
+    "originalBytes": 1886408,
+    "outputBytes": 470884,
+    "width": 5472,
+    "height": 3648
+  },
+  {
+    "source": "04_projects/Rendszerbonto/rockstarphotographers-rb-bence-nagy-20260410-13-58(1).jpg",
+    "output": "assets/ih-all/04_projects/rendszerbonto/rockstarphotographers-rb-bence-nagy-20260410-13-58-1.webp",
+    "originalBytes": 3561419,
+    "outputBytes": 348810,
+    "width": 6000,
+    "height": 4000
+  },
+  {
+    "source": "04_projects/spotlight/1/1.png",
+    "output": "assets/ih-all/04_projects/spotlight/1/1.webp",
+    "originalBytes": 1925667,
+    "outputBytes": 152412,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/1/3.png",
+    "output": "assets/ih-all/04_projects/spotlight/1/3.webp",
+    "originalBytes": 1958610,
+    "outputBytes": 93630,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/1/4.png",
+    "output": "assets/ih-all/04_projects/spotlight/1/4.webp",
+    "originalBytes": 1481149,
+    "outputBytes": 159714,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/2/1.png",
+    "output": "assets/ih-all/04_projects/spotlight/2/1.webp",
+    "originalBytes": 1487447,
+    "outputBytes": 83556,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/2/3.png",
+    "output": "assets/ih-all/04_projects/spotlight/2/3.webp",
+    "originalBytes": 1478786,
+    "outputBytes": 87224,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/2/4.png",
+    "output": "assets/ih-all/04_projects/spotlight/2/4.webp",
+    "originalBytes": 992026,
+    "outputBytes": 28612,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/2/6.png",
+    "output": "assets/ih-all/04_projects/spotlight/2/6.webp",
+    "originalBytes": 2646484,
+    "outputBytes": 206866,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/3/20.png",
+    "output": "assets/ih-all/04_projects/spotlight/3/20.webp",
+    "originalBytes": 1058238,
+    "outputBytes": 73748,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/3/22.png",
+    "output": "assets/ih-all/04_projects/spotlight/3/22.webp",
+    "originalBytes": 2052157,
+    "outputBytes": 38460,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/3/24.png",
+    "output": "assets/ih-all/04_projects/spotlight/3/24.webp",
+    "originalBytes": 1143241,
+    "outputBytes": 45308,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/3/26.png",
+    "output": "assets/ih-all/04_projects/spotlight/3/26.webp",
+    "originalBytes": 1450600,
+    "outputBytes": 55024,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/4/1.png",
+    "output": "assets/ih-all/04_projects/spotlight/4/1.webp",
+    "originalBytes": 1355362,
+    "outputBytes": 87262,
+    "width": 1088,
+    "height": 1358
+  },
+  {
+    "source": "04_projects/spotlight/4/3.png",
+    "output": "assets/ih-all/04_projects/spotlight/4/3.webp",
+    "originalBytes": 3197159,
+    "outputBytes": 311540,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/4/5.png",
+    "output": "assets/ih-all/04_projects/spotlight/4/5.webp",
+    "originalBytes": 2097148,
+    "outputBytes": 109766,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/4/6.png",
+    "output": "assets/ih-all/04_projects/spotlight/4/6.webp",
+    "originalBytes": 2668343,
+    "outputBytes": 138902,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/5/50.png",
+    "output": "assets/ih-all/04_projects/spotlight/5/50.webp",
+    "originalBytes": 1867101,
+    "outputBytes": 122868,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/5/52.png",
+    "output": "assets/ih-all/04_projects/spotlight/5/52.webp",
+    "originalBytes": 2735102,
+    "outputBytes": 230614,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/5/54.png",
+    "output": "assets/ih-all/04_projects/spotlight/5/54.webp",
+    "originalBytes": 1378899,
+    "outputBytes": 77872,
+    "width": 1080,
+    "height": 1350
+  },
+  {
+    "source": "04_projects/spotlight/5/56.png",
+    "output": "assets/ih-all/04_projects/spotlight/5/56.webp",
+    "originalBytes": 2832675,
+    "outputBytes": 258516,
+    "width": 1080,
+    "height": 1350
+  }
+]

@@ -1,0 +1,56 @@
+old_path,new_path,leiras
+about/001_about_map.jpg,02_about/about_map_budapest.jpg,térkép / lokációs kép
+about/002_about_image_01.webp,02_about/about_portrait_red_background.webp,portré piros háttér előtt
+about/003_about_image_02.webp,02_about/about_portrait_black_shirt.webp,"portré fekete pólóban, meleg fényben"
+about/005_about_image_04.webp,02_about/about_studio_chair_lamp.webp,stúdió/beszélgetés enteriőr
+about/006_about_image_05.webp,02_about/about_bw_road_car.webp,fekete-fehér werk / út melletti kép
+homepage/001_home_hero.webp,01_homepage/home_hero_field_person.webp,"főoldali hero kép, mezőben ülő alak"
+homepage/003_home_work_02.webp,01_homepage/work_thumb_hofi_tarr_bela_bw_dance.webp,munka thumbnail: fekete-fehér tánc / Tarr Béla-Hofi hangulat
+homepage/004_home_work_03.webp,01_homepage/work_thumb_concert_spotlight.webp,munka thumbnail: koncert / reflektorfény
+homepage/005_home_work_04.webp,01_homepage/work_thumb_interview_blond_man.webp,"munka thumbnail: interjú, szőke férfi"
+homepage/006_home_work_05.webp,01_homepage/work_thumb_studio_two_people.webp,munka thumbnail: stúdióbeszélgetés két emberrel
+homepage/007_home_work_06.webp,01_homepage/work_thumb_interview_woman_microphone.webp,munka thumbnail: nő mikrofonnal
+homepage/008_home_work_07.webp,01_homepage/work_thumb_manifestacio_red_set.webp,munka thumbnail: Manifestáció piros stúdiókép
+homepage/009_home_work_08.webp,01_homepage/work_thumb_kifogas_tanacsadas_poster.webp,munka thumbnail: Kifogás tanácsadás poszter
+homepage/010_home_work_09.webp,01_homepage/work_thumb_studio_portrait_black_outfit.webp,munka thumbnail: stúdió portré fekete outfitben
+homepage/011_home_work_10.webp,01_homepage/work_thumb_camera_monitor_orange.webp,munka thumbnail: kamera monitor / narancs fény
+homepage/012_home_work_11.webp,01_homepage/work_thumb_closeup_eye.webp,munka thumbnail: közeli szem
+logos/001_logo_partner_01.webp,03_partner_logos/logo_biff.webp,partnerlogó: BIFF
+logos/002_logo_partner_02.webp,03_partner_logos/logo_hbo.webp,partnerlogó: HBO
+logos/003_logo_partner_03.webp,03_partner_logos/logo_budapest_park.webp,partnerlogó: Budapest Park
+logos/004_logo_partner_04.webp,03_partner_logos/logo_a38.webp,partnerlogó: A38
+logos/005_logo_partner_05.webp,03_partner_logos/logo_cenzura.webp,partnerlogó: Cenzúra
+logos/006_logo_partner_06.webp,03_partner_logos/logo_beton_hofi.webp,partnerlogó: Beton.Hofi
+logos/007_logo_partner_07.webp,03_partner_logos/logo_bracket_mark_unknown.webp,partnerlogó / jel: bracket mark
+projects/cenzura-xxl/001_cenzura_01.webp,04_projects/cenzura-xxl/cenzura_xxl_concert_spotlight_wide.webp,"Cenzúra XXL koncert, reflektorfényes kép"
+projects/cenzura-xxl/002_cenzura_02.webp,04_projects/cenzura-xxl/cenzura_xxl_concert_dark_stage.webp,Cenzúra XXL sötét színpad / közönség
+projects/cenzura-xxl/003_cenzura_03.webp,04_projects/cenzura-xxl/cenzura_xxl_performer_blue_light.webp,Cenzúra XXL fellépő kék fényben
+projects/cenzura-xxl/004_cenzura_04.webp,04_projects/cenzura-xxl/cenzura_xxl_crowd_blue_lights.webp,Cenzúra XXL közönség / kék fények
+projects/cenzura-xxl/005_cenzura_05.webp,04_projects/cenzura-xxl/cenzura_xxl_red_closeup_stage.webp,Cenzúra XXL vörös közeli színpadkép
+projects/hofi-tarr-bela/001_hofi_01.webp,04_projects/hofi-tarr-bela/hofi_tarr_bela_bw_dance_scene.webp,Hofi x Tarr Béla fekete-fehér táncjelenet
+projects/hofi-tarr-bela/002_hofi_02.webp,04_projects/hofi-tarr-bela/hofi_tarr_bela_bw_graffiti_scene.webp,Hofi x Tarr Béla fekete-fehér graffiti/utca jelenet
+projects/hofi-tarr-bela/003_hofi_03.webp,04_projects/hofi-tarr-bela/hofi_tarr_bela_smoke_street_scene.webp,Hofi x Tarr Béla utcai füstös jelenet
+projects/hofi-tarr-bela/004_hofi_04.webp,04_projects/hofi-tarr-bela/hofi_tarr_bela_bw_smoke_street_wide.webp,Hofi x Tarr Béla fekete-fehér füstös utcakép
+projects/hofi-tarr-bela/005_hofi_05.webp,04_projects/hofi-tarr-bela/hofi_tarr_bela_group_street_scene.webp,Hofi x Tarr Béla csoportos utcai jelenet
+projects/insta-karuzel/001_karuzel_01.webp,04_projects/insta-karuzel/insta_karuzel_black_white_post.webp,Instagram karuzel: fekete-fehér poszt
+projects/insta-karuzel/002_karuzel_02.webp,04_projects/insta-karuzel/insta_karuzel_nails_closeup.webp,Instagram karuzel: köröm / kéz közeli
+projects/insta-karuzel/004_karuzel_04.webp,04_projects/insta-karuzel/insta_karuzel_interview_frame.webp,Instagram karuzel: interjú frame
+projects/kepes-interjuk/001_kepes_01.webp,04_projects/kepes-interjuk/kepes_interjuk_two_women_event.webp,Képes interjúk: két nő eseményen
+projects/kepes-interjuk/002_kepes_02.webp,04_projects/kepes-interjuk/kepes_interjuk_two_women_green_room.webp,Képes interjúk: két nő zöld háttér előtt
+projects/kepes-interjuk/003_kepes_03.webp,04_projects/kepes-interjuk/kepes_interjuk_poster_frame.webp,Képes interjúk: poszteres frame
+projects/kepes-interjuk/004_kepes_04.webp,04_projects/kepes-interjuk/kepes_interjuk_woman_cap_microphone.webp,Képes interjúk: nő sapkában mikrofonnal
+projects/kepes-interjuk/005_kepes_05.webp,04_projects/kepes-interjuk/kepes_interjuk_two_people_dark_frame.webp,Képes interjúk: két ember sötét frame-ben
+projects/melyviz-vvkriszti/001_melyviz_01.webp,04_projects/melyviz-vvkriszti/melyviz_vvkriszti_studio_wide.webp,Mélyvíz VV Kriszti: stúdió széles kép
+projects/melyviz-vvkriszti/002_melyviz_02.webp,04_projects/melyviz-vvkriszti/melyviz_vvkriszti_interview_chair.webp,Mélyvíz VV Kriszti: interjú székben
+projects/melyviz-vvkriszti/003_melyviz_03.webp,04_projects/melyviz-vvkriszti/melyviz_vvkriszti_closeup_face.webp,Mélyvíz VV Kriszti: közeli arc
+projects/offline/002_offline_02.webp,04_projects/offline/offline_presentation_room.webp,Offline esemény: prezentáció / terem
+projects/offline/004_offline_04.jpg,04_projects/offline/offline_culture_cross_section_panel.jpg,Offline esemény: Culture Cross Section panel
+projects/offline/005_offline_05.webp,04_projects/offline/offline_panel_outdoor_sign.webp,Offline esemény: kültéri panel / felirat
+projects/pogany-indulo/001_pogany_01.webp,04_projects/pogany-indulo/pogany_indulo_stage_portrait_blue.webp,Pogány Induló: színpadi portré kék fényben
+projects/pogany-indulo/002_pogany_02.webp,04_projects/pogany-indulo/pogany_indulo_interview_poster_wide.webp,Pogány Induló: interjú poszterrel
+projects/pogany-indulo/003_pogany_03.webp,04_projects/pogany-indulo/pogany_indulo_group_photo_stairs.webp,Pogány Induló: csoportkép lépcsőn
+projects/pogany-indulo/004_pogany_04.webp,04_projects/pogany-indulo/pogany_indulo_stage_arms_out.webp,"Pogány Induló: színpad, kitárt karok"
+projects/pogany-indulo/005_pogany_05.webp,04_projects/pogany-indulo/pogany_indulo_interview_blond_man.webp,Pogány Induló: interjú közeli
+projects/spotlight/002_spotlight_02.webp,04_projects/spotlight/spotlight_portrait_pink_black.webp,Spotlight: portré pink-fekete grafikával
+projects/spotlight/003_spotlight_03.jpg,04_projects/spotlight/spotlight_concert_silhouette.jpg,Spotlight: koncert sziluett
+projects/spotlight/004_spotlight_04.webp,04_projects/spotlight/spotlight_bio_slide.webp,Spotlight: bio slide

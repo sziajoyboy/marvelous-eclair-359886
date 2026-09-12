@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kutatás, sűrítés, vizualizáció. A kultúra nem információ, hanem narratíva.">
+  <title>Isten Hozott®</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/homepage.css">
+</head>
+<body>
+
+<!-- ── CURSOR ── -->
+<div id="cursor-ring" aria-hidden="true">
+  <span class="cursor-label" data-hu>NÉZD MEG</span>
+  <span class="cursor-label" data-en style="display:none">VIEW</span>
+</div>
+<div id="cursor-dot" aria-hidden="true"></div>
+
+<!-- ── LOADER ── -->
+<div id="loader" aria-hidden="true">
+  <img src="assets/logo_mark_orange.png" class="loader-logo" alt="">
+  <div class="loader-track"><div class="loader-bar"></div></div>
+</div>
+
+<!-- ── PROGRESS BAR ── -->
+<div id="works-progress" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════
+     FULLSCREEN NAV OVERLAY
+════════════════════════════════════ -->
+<div id="nav-overlay" role="dialog" aria-label="Navigáció" aria-modal="true">
+  <div class="nav-over-links">
+    <p class="nav-over-meta">Isten Hozott® · Budapest</p>
+    <a href="#works"   class="nav-over-link" data-nav-img="works"   onclick="document.getElementById('nav-hamburger').click()"><span class="link-inner" data-hu>Munkáink</span><span class="link-inner" data-en style="display:none">Works</span></a>
+    <a href="#formats" class="nav-over-link" data-nav-img="formats" onclick="document.getElementById('nav-hamburger').click()"><span class="link-inner" data-hu>Formátumok</span><span class="link-inner" data-en style="display:none">Formats</span></a>
+    <a href="#contact" class="nav-over-link" data-nav-img="contact" onclick="document.getElementById('nav-hamburger').click()"><span class="link-inner" data-hu>Kapcsolat</span><span class="link-inner" data-en style="display:none">Contact</span></a>
+    <div class="nav-over-socials">
+      <a href="https://instagram.com/isten.hozott" class="nav-over-social" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://youtube.com" class="nav-over-social" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+  <div class="nav-over-img-wrap" aria-hidden="true">
+    <img id="nav-over-photo" class="nav-over-photo" alt="">
+  </div>
+  <button id="nav-close" class="nav-over-close" aria-label="Bezárás">ESC / BEZÁR</button>
+</div>
+
+<!-- ════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════ -->
+<nav id="nav" role="navigation" aria-label="Főnavigáció">
+  <a href="#hero" class="nav-logo" aria-label="Isten Hozott® főoldal">
+    <img src="assets/logo_mark_orange.png" alt="IH logó">
+    <span class="nav-logo-name">Isten Hozott®</span>
+  </a>
+  <div class="nav-right">
+    <a href="#works"   class="nav-link"><span data-hu>Munkáink</span><span data-en style="display:none">Works</span></a>
+    <a href="#formats" class="nav-link"><span data-hu>Formátumok</span><span data-en style="display:none">Formats</span></a>
+    <a href="#contact" class="nav-link"><span data-hu>Kapcsolat</span><span data-en style="display:none">Contact</span></a>
+    <button id="lang-btn" aria-label="Nyelv váltása">EN</button>
+    <button id="nav-hamburger" class="nav-hamburger" aria-label="Menü megnyitása" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════
+     01 — HERO
+════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-bg">
+    <img class="hero-img" src="https://framerusercontent.com/images/8UVjX99qd0GNo0LFNI8czNm8c.jpg?scale-down-to=2048" alt="Isten Hozott — Budapest" loading="eager" fetchpriority="high">
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div id="hero-grain" aria-hidden="true"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-eyebrow" aria-hidden="true">
+      <span data-hu>Vizuális Történetmesélő Kollektíva · Budapest</span>
+      <span data-en style="display:none">Visual Storytelling Collective · Budapest</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="line"><span class="line-inner">ISTEN</span></span>
+      <span class="line"><span class="line-inner">HOZOTT®</span></span>
+    </h1>
+    <div class="hero-divider" aria-hidden="true"></div>
+    <p class="hero-sub">
+      <span data-hu>Kutatás, sűrítés, vizualizáció.<br>A kultúra nem információ, hanem narratíva.</span>
+      <span data-en style="display:none">Research, distillation, visualisation.<br>Culture is not information — it is narrative.</span>
+    </p>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">
+    <div class="scroll-cue-line"></div>
+    <span class="scroll-cue-label"><span data-hu>Görgess</span><span data-en style="display:none">Scroll</span></span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     02 — WORKS (pinned horizontal)
+════════════════════════════════════ -->
+<section id="works" aria-label="Munkáink">
+  <div class="works-intro">
+    <h2 class="section-heading"><span data-hu>Munkáink</span><span data-en style="display:none">Works</span></h2>
+    <span class="section-count">(8)</span>
+  </div>
+  <div class="works-track" id="worksTrack" role="list" aria-label="Projektjeink"></div>
+</section>
+
+<!-- ── TYPE DIVIDER ── -->
+<div class="type-divider" aria-hidden="true">
+  <div class="type-div-inner">MÉLYVÍZ &amp; <span>ESSZÉ</span></div>
+</div>
+
+<!-- ════════════════════════════════════
+     03 — FORMÁTUMOK
+════════════════════════════════════ -->
+<section id="formats" aria-label="Formátumok">
+  <div class="formats-header">
+    <h2 class="section-heading"><span data-hu>Formátumok</span><span data-en style="display:none">Formats</span></h2>
+    <span class="section-count">(6)</span>
+  </div>
+  <div class="formats-grid" id="formatsGrid"></div>
+</section>
+
+<!-- ════════════════════════════════════
+     04 — PILLANATOK (sequential photos)
+════════════════════════════════════ -->
+<section id="moments" aria-label="Pillanatok">
+  <div id="momentsInner"></div>
+</section>
+
+<!-- ── TYPE DIVIDER ── -->
+<div class="type-divider" aria-hidden="true">
+  <div class="type-div-inner"><span>SPOTLIGHT</span> × OFFLINE</div>
+</div>
+
+<!-- ════════════════════════════════════
+     05 — MANIFESZTÓ
+════════════════════════════════════ -->
+<section id="manifesto" aria-label="Manifesztó">
+  <div class="manifesto-inner">
+    <span class="manifesto-eyebrow"><span data-hu>Elvek</span><span data-en style="display:none">Principles</span></span>
+    <div class="manifesto-body">
+      <span id="manifestoHu" data-hu>A kultúra nem információ, hanem narratíva — olyan történetek, amiket azért mesélünk el, mert rezonálnak, nem mert trendek.</span>
+      <span id="manifestoEn" data-en style="display:none">Culture is not information — it is narrative. Stories we tell because they resonate, not because they trend.</span>
+    </div>
+    <div class="manifesto-footer">
+      <div class="manifesto-bar" aria-hidden="true"></div>
+      <p class="manifesto-foot-text">
+        <span data-hu>Budapest, 2023 — Kutatás, sűrítés, vizualizáció.</span>
+        <span data-en style="display:none">Budapest, 2023 — Research, distillation, visualisation.</span>
+      </p>
+    </div>
+    <div class="manifesto-ghost" aria-hidden="true">IH</div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     06 — SZÁMOK
+════════════════════════════════════ -->
+<section id="stats" aria-label="Számok">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num"><span id="stat-0">0</span></div>
+      <span class="stat-label"><span data-hu>Projekt</span><span data-en style="display:none">Projects</span></span>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span id="stat-1">0</span></div>
+      <span class="stat-label"><span data-hu>Instagram követő</span><span data-en style="display:none">Followers</span></span>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num"><span id="stat-2">0</span></div>
+      <span class="stat-label"><span data-hu>Átlag elkötelezettségi ráta</span><span data-en style="display:none">Avg. engagement rate</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     07 — ESSZÉK (hover-swap gallery)
+════════════════════════════════════ -->
+<section id="essays" aria-label="Vizuális Esszék">
+  <div class="essays-header">
+    <h2 class="section-heading"><span data-hu>Vizuális Esszék</span><span data-en style="display:none">Visual Essays</span></h2>
+    <span class="section-count">(4)</span>
+  </div>
+  <div class="essays-grid" id="essaysGrid"></div>
+</section>
+
+<!-- ════════════════════════════════════
+     08 — MUNKÁK LISTA
+════════════════════════════════════ -->
+<section id="work-list" aria-label="Projektek listája">
+  <div class="list-header">
+    <h2 class="section-heading"><span data-hu>Munkák</span><span data-en style="display:none">Projects</span></h2>
+    <span class="section-count">(8)</span>
+  </div>
+  <div id="workList" role="list"></div>
+  <a href="#" class="list-all">
+    <span data-hu>Összes projekt</span><span data-en style="display:none">All projects</span>
+    <span aria-hidden="true">→</span>
+  </a>
+</section>
+
+<!-- ════════════════════════════════════
+     09 — SOCIAL GRID
+════════════════════════════════════ -->
+<section id="social" aria-label="Instagram">
+  <div class="social-header">
+    <h2 class="section-heading">@isten.hozott</h2>
+  </div>
+  <div class="social-grid" id="socialGrid"></div>
+  <a href="https://instagram.com/isten.hozott" class="social-cta" target="_blank" rel="noopener">
+    <span data-hu>Kövess Instagramon</span><span data-en style="display:none">Follow on Instagram</span>
+    <span aria-hidden="true">→</span>
+  </a>
+</section>
+
+<!-- ════════════════════════════════════
+     10 — PARTNERS
+════════════════════════════════════ -->
+<section id="partners" aria-label="Együttműködések">
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-strip" id="marquee1"></div>
+    <div class="marquee-strip" id="marquee2"></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     11 — CTA / KAPCSOLAT
+════════════════════════════════════ -->
+<section id="contact" aria-label="Kapcsolat">
+  <div class="cta-bg-ghost" aria-hidden="true">IH</div>
+  <p class="cta-label"><span data-hu>Kontakt</span><span data-en style="display:none">Contact</span></p>
+  <h2 class="cta-title">
+    <span class="line"><span class="line-inner"><span data-hu>VAN EGY</span><span data-en style="display:none">GOT AN</span></span></span>
+    <span class="line"><span class="line-inner"><span data-hu>ÖTLETED?</span><span data-en style="display:none">IDEA?</span></span></span>
+  </h2>
+  <div class="cta-divider" aria-hidden="true"></div>
+  <div class="cta-mag-wrap">
+    <a href="mailto:helloistenhozott@gmail.com" class="cta-email">helloistenhozott@gmail.com</a>
+  </div>
+</section>
+
+<!-- ── FOOTER STATEMENT ── -->
+<div class="footer-statement">
+  <p class="footer-statement-text">
+    <span data-hu><em>A kultúra nem tűnik el.</em><br>Csak új formát vesz fel.</span>
+    <span data-en style="display:none"><em>Culture does not disappear.</em><br>It only takes new form.</span>
+  </p>
+</div>
+
+<!-- ════════════════════════════════════
+     FOOTER
+════════════════════════════════════ -->
+<footer>
+  <div class="footer-brand">
+    <img src="assets/logo_mark_orange.png" alt="IH logó">
+    <span class="footer-brand-name">Isten Hozott®</span>
+  </div>
+  <span class="footer-copy">© 2026 Isten Hozott®</span>
+  <div class="footer-links">
+    <a href="https://instagram.com/isten.hozott" class="footer-link" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://youtube.com" class="footer-link" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/homepage.js"></script>
+</body>
+</html>

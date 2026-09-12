@@ -1,0 +1,626 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vizuális történetmesélő kollektíva. A kultúra nem információ, hanem narratíva.">
+  <meta property="og:type"        content="website">
+  <!-- TODO (éles): og:url-t és og:image-t a saját domainre cserélni -->
+  <meta property="og:url"         content="https://istenhozott.hu/">
+  <meta property="og:title"       content="Isten Hozott® — Vizuális Történetmesélő Kollektíva">
+  <meta property="og:description" content="Vizuális történetmesélő kollektíva. A kultúra nem információ, hanem narratíva.">
+  <meta property="og:image"       content="https://framerusercontent.com/images/8UVjX99qd0GNo0LFNI8czNm8c.jpg?width=1200">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="hu_HU">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Isten Hozott® — Vizuális Történetmesélő Kollektíva">
+  <meta name="twitter:description" content="Vizuális történetmesélő kollektíva. A kultúra nem információ, hanem narratíva.">
+  <meta name="twitter:image"       content="https://framerusercontent.com/images/8UVjX99qd0GNo0LFNI8czNm8c.jpg?width=1200">
+  <!-- Favicon: SVG elsőbbséggel, PNG fallback régebbi böngészőknek -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png"     href="assets/logo_mark_orange.png" sizes="any">
+  <title>Isten Hozott® — Vizuális Történetmesélő Kollektíva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400;0,600;1,400&family=Big+Shoulders+Display:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/homepage-v6.css">
+  <link rel="stylesheet" href="styles/homepage-v7.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-ring" aria-hidden="true"><span class="cursor-label">Nézd</span></div>
+<div id="cursor-dot"  aria-hidden="true"></div>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo"><img src="assets/logo_mark_orange.png" alt="IH"></div>
+  <div class="ld-meta">
+    <span>Betöltés</span>
+    <span>Isten Hozott® · Budapest · 2026</span>
+    <span>Archívum nyílik</span>
+  </div>
+  <div class="ld-num"><span class="n">00</span><span class="pct">%</span></div>
+  <!-- .ld-brand: üres placeholder a v6-app.js GSAP timeline-hoz (warning-mentes) -->
+  <div class="ld-brand" aria-hidden="true"></div>
+</div>
+<div class="ld-shutter" aria-hidden="true"></div>
+
+<!-- TWEAKS -->
+<aside id="tweaks" aria-label="Tweaks"></aside>
+
+<!-- EDGE TEXT -->
+<div class="edge-text-wrap" aria-hidden="true">
+  <span class="edge-text">ISTEN·HOZOTT® — VIZUÁLIS·TÖRTÉNETMESÉLŐ·KOLLEKTÍVA · BUDAPEST · 2026</span>
+</div>
+
+<!-- ════ NAV ════ -->
+<nav id="nav" aria-label="Főnavigáció">
+  <a href="#hero" class="nav-logo" aria-label="Isten Hozott főoldal">
+    <img src="assets/logo_mark_orange.png" alt="IH">
+    <span>Isten Hozott®</span>
+  </a>
+  <div class="nav-right">
+    <span class="nav-clock" id="navClock">BUDAPEST</span>
+    <a href="work/index.html" class="nav-link">Munkáink</a>
+    <a href="#contact"        class="nav-link">Kapcsolat</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menü">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════ NAV OVERLAY ════ -->
+<div id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigáció">
+  <div class="navo-links">
+    <p class="navo-meta">Isten Hozott® · Vizuális Történetmesélő Kollektíva</p>
+    <a href="work/index.html" class="navo-link" data-nav-img="works">
+      <span class="li"><span class="idx">01</span>Munkáink</span>
+    </a>
+    <a href="#formats"  class="navo-link" data-nav-img="formats">
+      <span class="li"><span class="idx">02</span>Formátumok</span>
+    </a>
+    <a href="#contact"  class="navo-link" data-nav-img="contact">
+      <span class="li"><span class="idx">03</span>Kapcsolat</span>
+    </a>
+  </div>
+  <div class="navo-img"><img id="navoPhoto" alt=""></div>
+  <button class="navo-close" id="navoClose">ESC / BEZÁR</button>
+  <div class="navo-socials">
+    <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram ↗</a>
+    <a href="https://www.youtube.com/@IstenHozott-yt" target="_blank" rel="noopener">YouTube ↗</a>
+  </div>
+</div>
+
+<!-- ════ HERO — VÁLTOZATLAN ════ -->
+<section id="hero" data-screen-label="Hero">
+  <div class="hero-bg">
+    <img class="hero-img"
+         src="https://framerusercontent.com/images/8UVjX99qd0GNo0LFNI8czNm8c.jpg?scale-down-to=2048"
+         alt="Isten Hozott — Budapest" loading="eager" fetchpriority="high">
+    <canvas id="hero-webgl" aria-hidden="true"></canvas>
+    <div class="hero-scrim"></div>
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div id="hero-grain" aria-hidden="true"></div>
+  </div>
+  <div class="hero-meta-top" data-depth="1.12">
+    <span class="hero-eyebrow">Vizuális Történetmesélő Kollektíva</span>
+    <span class="hero-loc">Budapest · É 47.49° K 19.04°</span>
+  </div>
+  <div class="hero-body">
+    <div class="hm-track">
+      <span class="hm-line">ISTEN&nbsp;<span class="out">HOZOTT</span><span class="reg">®</span></span>
+    </div>
+    <p class="hm-sub">Budapest élő kulturális szcénájának vizuális krónikása — márkáknak, intézményeknek, alkotóknak.</p>
+  </div>
+  <div class="hero-rail" aria-hidden="true">
+    <span>01</span>
+    <i></i>
+    <span>Vertical archive</span>
+  </div>
+  <div class="scroll-cue" data-depth="1.15">
+    <div class="scroll-cue-line"></div>
+    <span>Görgess</span>
+  </div>
+</section>
+
+<!-- ════ VELOCITY STRIP ════ -->
+<div class="velo-strip" aria-hidden="true">
+  <div class="velo-track" id="velo1"></div>
+</div>
+
+<!-- ════ ABOUT / POSITIONING ════ -->
+<section id="about" data-screen-label="Rólunk">
+  <div class="about-text">
+    <span class="sec-eyebrow about-eyebrow">KIVEL DOLGOZUNK</span>
+    <h2 class="about-headline">NEM CONTENT<br>STUDIO.<br><em>KULTURÁLIS</em><br><em>SZEMTANÚ.</em></h2>
+    <p class="about-dek">Filmstúdiókkal, kulturális intézményekkel, márkákkal és alkotókkal dolgozunk azon, hogy a történeteik ne csak láthatóak legyenek, hanem kontextust kapjanak.</p>
+    <span class="about-proof">HBO · Beton.Hofi · Budapest Park · Cenzúra · Sneakerness</span>
+    <a href="#contact" class="about-link">Kapcsolatfelvétel &nbsp;→</a>
+  </div>
+  <div class="about-photo">
+    <img src="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=900" alt="Isten Hozott — Budapest" loading="lazy">
+    <div class="about-photo-scrim"></div>
+  </div>
+</section>
+
+<!-- ════ WORKS — SZERKESZTŐI GRID ════ -->
+<section id="works" data-screen-label="Munkáink">
+  <div class="works-ed-head">
+    <div style="display:flex;align-items:baseline;gap:16px">
+      <span class="sec-eyebrow">№ 01</span>
+      <h2 class="sec-title">Munkáink</h2>
+    </div>
+    <a href="work/index.html" class="works-ed-all">Összes projekt &nbsp;→</a>
+  </div>
+
+  <div class="works-ed-grid">
+
+    <!-- HERO KÁRTYA -->
+    <a href="work/pogany-indulo-hbo.html" class="wed-card wed-hero js-card">
+      <div class="wed-media">
+        <img class="wed-img" src="https://framerusercontent.com/images/gGXLpmMOtIRg7NR32mrquUsXU.jpeg?width=1600" alt="Pogány Induló × HBO" loading="eager">
+        <div class="wed-scrim"></div>
+      </div>
+      <span class="wed-num">01</span>
+      <span class="wed-arrow">↗</span>
+      <div class="wed-body">
+        <span class="wed-cat">Interjú · HBO · 2023</span>
+        <h3 class="wed-title">Pogány Induló<br>× HBO</h3>
+        <p class="wed-outcome">Médiapartnerség · Pogány Induló</p>
+      </div>
+    </a>
+
+    <!-- SECONDARY SOR -->
+    <div class="works-ed-secondary">
+      <a href="work/melyviz-vvkriszti.html" class="wed-card wed-sec js-card">
+        <div class="wed-media">
+          <img class="wed-img" src="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=900" alt="Mélyvíz — VV Kriszti" loading="lazy">
+          <div class="wed-scrim"></div>
+        </div>
+        <span class="wed-num">02</span>
+        <span class="wed-arrow">↗</span>
+        <div class="wed-body">
+          <span class="wed-cat">Mélyvíz · 2025</span>
+          <h3 class="wed-title">Mélyvíz —<br>VV Kriszti</h3>
+          <p class="wed-outcome">Hosszú, csendes interjú</p>
+        </div>
+      </a>
+      <a href="work/beton-hofi-tarr-bela.html" class="wed-card wed-sec js-card">
+        <div class="wed-media">
+          <img class="wed-img" src="https://framerusercontent.com/images/A1yK24W4WuWxjSo8rbwP3UbdPTY.jpg?width=900" alt="Beton.Hofi × Tarr Béla Werkfilm" loading="lazy">
+          <div class="wed-scrim"></div>
+        </div>
+        <span class="wed-num">03</span>
+        <span class="wed-arrow">↗</span>
+        <div class="wed-body">
+          <span class="wed-cat">Interjú · 2025</span>
+          <h3 class="wed-title">Beton Hofi<br>× Tarr Béla</h3>
+          <p class="wed-outcome">Werkfilm</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- TERTIARY SOR -->
+    <div class="works-ed-tertiary">
+      <a href="work/cnzura-xxl.html" class="wed-card wed-ter js-card">
+        <div class="wed-media">
+          <img class="wed-img" src="https://framerusercontent.com/images/z7M2jAMFfwiRk7ln6gBvyig0ZxM.jpg?width=700" alt="C*nzura XXL" loading="lazy">
+          <div class="wed-scrim"></div>
+        </div>
+        <span class="wed-num">04</span>
+        <span class="wed-arrow">↗</span>
+        <div class="wed-body">
+          <span class="wed-cat">Élő · 2025</span>
+          <h3 class="wed-title">C*nzura XXL</h3>
+        </div>
+      </a>
+      <a href="work/spotlight.html" class="wed-card wed-ter js-card">
+        <div class="wed-media">
+          <img class="wed-img" src="https://framerusercontent.com/images/6H2yRVoHHykG9c79hi2W40X4QGs.jpg?width=700" alt="Spotlight" loading="lazy">
+          <div class="wed-scrim"></div>
+        </div>
+        <span class="wed-num">05</span>
+        <span class="wed-arrow">↗</span>
+        <div class="wed-body">
+          <span class="wed-cat">Portré · 2024</span>
+          <h3 class="wed-title">Spotlight</h3>
+        </div>
+      </a>
+      <a href="work/index.html" class="wed-card wed-ter js-card">
+        <div class="wed-media">
+          <img class="wed-img" src="https://framerusercontent.com/images/RY3pB8nLBX0VONPHq6ZJVUlxoLA.png?width=700" alt="Offline — Dugattyús" loading="lazy">
+          <div class="wed-scrim"></div>
+        </div>
+        <span class="wed-num">06</span>
+        <span class="wed-arrow">↗</span>
+        <div class="wed-body">
+          <span class="wed-cat">Esemény · 2024</span>
+          <h3 class="wed-title">Offline</h3>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════ MANIFESZTÓ — VÁLTOZATLAN ════ -->
+<section id="manifesto" data-screen-label="Manifesztó">
+  <div class="mani-pin">
+    <span class="mani-vline">Isten Hozott® · Elvek · Kutatás · Sűrítés · Vizualizáció</span>
+    <div class="mani-wrap">
+      <div class="mani-left">
+        <span class="mani-eyebrow sec-eyebrow">Elvek — № 02</span>
+        <p class="mani-body" id="maniBody"></p>
+        <div class="mani-foot">
+          <span class="bar"></span>
+          <p>Budapest, 2023 — Kutatás, sűrítés, vizualizáció.</p>
+        </div>
+      </div>
+      <div class="mani-right">
+        <div class="mani-photo-wrap">
+          <img class="mani-photo"
+               src="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=900"
+               alt="Mélyvíz — Budapest, 2025" loading="lazy">
+          <span class="mani-photo-cap">Budapest, 2025</span>
+        </div>
+        <div class="mani-aside">
+          <span class="mani-aside-num">2023</span>
+          <span class="mani-aside-label">Alapítva<br>Budapest</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FORMÁTUMOK — tartalomjegyzék logika ════ -->
+<section id="formats" data-screen-label="Formátumok">
+  <div class="sec-head">
+    <div class="sec-head-l">
+      <span class="sec-eyebrow">№ 03</span>
+      <h2 class="sec-title">Formátumok</h2>
+    </div>
+    <p class="sec-note">Hat forma, egy gondolat:<br>a figyelem mint érték.</p>
+  </div>
+  <div class="fmt-list" id="fmtList"></div>
+</section>
+
+<!-- ════ STATOK + PRESS KIT ════ -->
+<section id="stats" data-screen-label="Számok">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num" id="stat-proj">0</div>
+      <span class="stat-label">Elkészült projekt</span>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="stat-ig">0</div>
+      <span class="stat-label">Instagram közösség</span>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="stat-2">0</div>
+      <span class="stat-label">Átlag elköteleződés</span>
+    </div>
+    <div class="stat">
+      <div class="stat-num" id="stat-video">0</div>
+      <span class="stat-label">Legerősebb organikus videó</span>
+    </div>
+  </div>
+  <div class="presskit-lower">
+    <div class="pk-quote">
+      <p class="pk-quote-text">„A figyelem mint érték — ezt az egyetlen mondatot értik meg legjobban, akikkel a legjobb munkát csináltuk."</p>
+      <span class="pk-quote-source">Kővári Zoltán · Alapító, Budapest, 2023</span>
+    </div>
+    <p class="pk-note">17 350 Instagram-követő, 4,47% medián ER, 1 049 803 IG-megjelenítés és 96K YouTube-nézettség mögött egyetlen szerkesztői szempont áll — nem mennyiség, hanem rezonancia. Filmfesztiváloktól brand aktivációkig.</p>
+  </div>
+</section>
+
+<!-- ════ PARALLAX SPLIT — VÁLTOZATLAN ════ -->
+<section id="split" data-screen-label="Idézet">
+  <div class="split-contours" aria-hidden="true"></div>
+  <div class="split-photo split-l" aria-hidden="true">
+    <img src="https://framerusercontent.com/images/A1yK24W4WuWxjSo8rbwP3UbdPTY.jpg?width=800" alt="" loading="lazy">
+    <div class="split-scrim"></div>
+  </div>
+  <div class="split-photo split-r" aria-hidden="true">
+    <img src="https://framerusercontent.com/images/gGXLpmMOtIRg7NR32mrquUsXU.jpeg?width=800" alt="" loading="lazy">
+    <div class="split-scrim"></div>
+  </div>
+  <div class="split-center">
+    <span class="split-bar"></span>
+    <p class="split-quote">A legnagyobb hatású emberek<br>általában nem tudnak<br>a hatásukról.</p>
+    <span class="split-attr">Isten Hozott® — Elv № 04</span>
+  </div>
+</section>
+
+<!-- ════ VIZUÁLIS ESSZÉK ════ -->
+<section id="essays" data-screen-label="Vizuális Esszék">
+  <div class="sec-head">
+    <div class="sec-head-l">
+      <span class="sec-eyebrow">№ 05</span>
+      <h2 class="sec-title">Vizuális Esszék</h2>
+    </div>
+    <span class="sec-count">@isten.hozott</span>
+  </div>
+  <div class="essays-hall" id="essaysHall"></div>
+</section>
+
+<!-- ════ KOLLABORÁCIÓK — kategorizált ════ -->
+<section id="partners" data-screen-label="Kollaborációk">
+  <div class="sec-head">
+    <div class="sec-head-l">
+      <span class="sec-eyebrow">№ 06</span>
+      <h2 class="sec-title">Kollaborációk</h2>
+    </div>
+    <p class="sec-note">Akikkel dolgoztunk.</p>
+  </div>
+
+  <div class="partners-grid">
+
+    <div class="partner-cat-section">
+      <span class="partner-cat-label">Médiapartnerek</span>
+      <ul class="partner-cat-list">
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">01</span>
+          <span class="pcr-name">HBO</span>
+          <span class="pcr-type">Streaming</span>
+        </li>
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">02</span>
+          <span class="pcr-name outline">Recorder</span>
+          <span class="pcr-type">Média</span>
+        </li>
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">03</span>
+          <span class="pcr-name">Hype &amp; Hyper</span>
+          <span class="pcr-type">Editoriál</span>
+        </li>
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">04</span>
+          <span class="pcr-name outline">Magyar Narancs</span>
+          <span class="pcr-type">Sajtó</span>
+        </li>
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">05</span>
+          <span class="pcr-name">Tilos Rádió</span>
+          <span class="pcr-type">Rádió</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="partner-cat-section">
+      <span class="partner-cat-label">Kulturális partnerek</span>
+      <ul class="partner-cat-list">
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">06</span>
+          <span class="pcr-name">Budapest Park</span>
+          <span class="pcr-type">Helyszín</span>
+        </li>
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">07</span>
+          <span class="pcr-name outline">Dugattyús</span>
+          <span class="pcr-type">Otthon</span>
+        </li>
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">08</span>
+          <span class="pcr-name">Bródy Ház</span>
+          <span class="pcr-type">Helyszín</span>
+        </li>
+        <li class="partner-cat-row js-partner">
+          <span class="pcr-num">09</span>
+          <span class="pcr-name outline">Friss Hús</span>
+          <span class="pcr-type">Fesztivál</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="logo-marquee" aria-label="Partnerek">
+    <div class="logo-track" id="logoTrack"></div>
+  </div>
+</section>
+
+<!-- ════ CONTACT — KETTŐS CTA ════ -->
+<section id="contact" data-screen-label="Kapcsolat">
+  <div class="cta-marquee-wrap" aria-hidden="true">
+    <span>ISTEN&nbsp;HOZOTT® · ISTEN&nbsp;HOZOTT® · ISTEN&nbsp;HOZOTT® · </span>
+  </div>
+  <div class="cta-content">
+    <span class="cta-label">Kontakt — Dolgozzunk együtt</span>
+    <h2 class="cta-title">
+      <span class="line"><span class="li">VAN EGY</span></span>
+      <span class="line"><span class="li">PROJEKTETEK?</span></span>
+    </h2>
+    <div class="cta-divider"></div>
+    <div class="cta-paths">
+      <div class="cta-path">
+        <span class="cta-path-label">Kulturális projekt,<br>dokumentumfilm, médiaanyag</span>
+        <a href="mailto:helloistenhozott@gmail.com" class="cta-email">helloistenhozott@gmail.com</a>
+      </div>
+      <div class="cta-path-sep"></div>
+      <div class="cta-path">
+        <span class="cta-path-label">Brand aktiváció,<br>intézményi megbízás</span>
+        <a href="mailto:helloistenhozott@gmail.com" class="cta-email">helloistenhozott@gmail.com</a>
+      </div>
+    </div>
+    <span class="cta-sub">Briefingtől a publikálásig — velünk. &nbsp;·&nbsp; Általában 5 munkanapon belül válaszolunk.</span>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<div class="site-foot">
+
+  <!-- filmes zárókép — full-bleed háttér, z-index:-1 a tartalom mögött -->
+  <div class="foot-bg" aria-hidden="true">
+    <img src="https://framerusercontent.com/images/f9XugYDiaPx0CoJtwgLWExSRozQ.jpg?width=1920"
+         alt="" loading="lazy" decoding="async">
+    <div class="foot-bg-scrim"></div>
+  </div>
+
+  <div class="foot-main">
+    <div class="foot-col foot-col-l">
+      <div class="foot-brand-mark">
+        <img src="assets/logo_mark_orange.png" alt="IH" width="32" height="32">
+        <span class="foot-col-label">Isten Hozott®</span>
+      </div>
+      <nav class="foot-nav-big">
+        <a href="work/index.html">Munkáink</a>
+        <a href="#formats">Formátumok</a>
+        <a href="#essays">Esszék</a>
+        <a href="#partners">Partnerek</a>
+        <a href="#contact" class="foot-nav-accent">Kapcsolat</a>
+      </nav>
+    </div>
+    <div class="foot-col foot-col-c">
+      <!-- foot-vis eltávolítva — full-bleed kép a .site-foot szintjén -->
+      <a href="mailto:helloistenhozott@gmail.com" class="foot-contact-btn">
+        helloistenhozott@gmail.com <span class="foot-btn-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+    <div class="foot-col foot-col-r">
+      <p class="foot-tagline">Vizuális<br>történetmesélés<br>Budapest szívéből.</p>
+      <div class="foot-social-wrap">
+        <nav class="foot-social-big">
+          <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/@IstenHozott-yt" target="_blank" rel="noopener">YouTube</a>
+        </nav>
+        <div class="foot-social-stats">
+          <span>17 350 követő</span>
+          <span>4,47% ER</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot-logos-strip" aria-label="Partnerek">
+    <div class="foot-logos-track">
+      <span class="logo-mq-item">HBO</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Recorder</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Budapest Park</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Hype &amp; Hyper</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Magyar Narancs</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Dugattyús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Bródy Ház</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Tilos Rádió</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Friss Hús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">HBO</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Recorder</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Budapest Park</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Hype &amp; Hyper</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Magyar Narancs</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Dugattyús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Bródy Ház</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Tilos Rádió</span><span class="logo-mq-dot" aria-hidden="true"></span>
+      <span class="logo-mq-item">Friss Hús</span><span class="logo-mq-dot" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot-brand">
+      <img src="assets/logo_mark_orange.png" alt="IH">
+      <span>Isten Hozott®</span>
+    </div>
+    <span class="foot-copy">© 2026 Isten Hozott® · Budapest</span>
+    <div class="foot-links">
+      <a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@IstenHozott-yt" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </footer>
+</div>
+
+<!-- FORMAT CURSOR PREVIEW -->
+<div id="fmt-cursor-img" aria-hidden="true"><img alt=""></div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<!-- Three.js: ES module modern böngészőknek (no deprecation warning), UMD fallback régebbi klienseknek.
+     window.THREE a module callback-ban kerül beállításra; v6-fx.js/v6-app.js csak boot() után éri el
+     (loader animáció ~2s-os késleltetése után), így a timing biztonságos. -->
+<script type="module">
+  import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.module.min.js';
+  window.THREE = THREE;
+</script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+<script src="js/v4-grain.js"></script>
+<script src="js/v6-data.js"></script>
+<script src="js/v6-fx.js"></script>
+<script src="js/v6-app.js"></script>
+<script src="js/v7-app.js"></script>
+
+<script>
+/* ── v7 overrides — fut ELŐTTE a DOMContentLoaded előtt ── */
+
+/* Narrative szekció eltávolítva */
+renderNarrative = function() {};
+
+/* Partners hardcoded HTML-ben — JS render letiltva */
+renderPartners = function() {};
+
+/* Logo marquee — frissített partnerlista */
+renderLogoMarquee = function() {
+  var lt = document.getElementById('logoTrack');
+  if (!lt) return;
+  var list = ['HBO','Recorder','Budapest Park','Hype & Hyper',
+              'Magyar Narancs','Dugattyús','Bródy Ház','Tilos Rádió','Friss Hús'];
+  var one = list.map(function(p) {
+    return '<span class="logo-mq-item">' + p + '</span>' +
+           '<span class="logo-mq-dot" aria-hidden="true"></span>';
+  }).join('');
+  lt.innerHTML = one + one + one;
+};
+
+/* Essay kártyák → <a> linkek Instagram felé */
+renderEssays = function() {
+  var eg = document.getElementById('essaysHall');
+  if (!eg) return;
+  eg.innerHTML = IH_ESSAYS.map(function(e) {
+    return '<a href="https://instagram.com/isten.hozott" target="_blank" rel="noopener"' +
+           ' class="essay-card js-essay-card">' +
+           '<img class="essay-card-img essay-base" src="' + W(e.base,800) + '" alt="' + e.hu + '" loading="lazy">' +
+           '<img class="essay-card-img essay-hover" src="' + W(e.hover,800) + '" alt="" loading="lazy">' +
+           '<div class="essay-card-scrim"></div>' +
+           '<div class="essay-card-top"></div>' +
+           '<div class="essay-card-body">' +
+             '<div class="essay-card-issue">' + e.issue + '</div>' +
+             '<div class="essay-card-title">' + e.hu + '</div>' +
+           '</div>' +
+           '</a>';
+  }).join('');
+};
+
+/* v7 egyedi statok: stat-proj (120+), stat-ig (17.3K), stat-video (276K)
+   stat-proj: átnevezve stat-0-ról, hogy a v6-app.js ne animálja felül (nincs a STATS tömbben)
+   stat-ig, stat-video: v6-app.js nem érinti, v7-es formátumok */
+window.addEventListener('load', function() {
+  if (typeof gsap === 'undefined') return;
+  var v7Stats = [
+    { id: 'stat-proj', end: 120,  suf: '+', dec: 0 },
+    { id: 'stat-ig',   end: 17.5, suf: 'K', dec: 1 },
+    { id: 'stat-video',end: 276,  suf: 'K', dec: 0 }
+  ];
+  var statsEl = document.getElementById('stats');
+  if (!statsEl) return;
+  var fired = false;
+  var io = new IntersectionObserver(function(entries) {
+    if (!entries[0].isIntersecting || fired) return;
+    fired = true; io.disconnect();
+    v7Stats.forEach(function(cfg) {
+      var el = document.getElementById(cfg.id);
+      if (!el) return;
+      var o = { v: 0 };
+      gsap.to(o, { v: cfg.end, duration: 2.2, ease: 'power2.out',
+        onUpdate: function() {
+          el.innerHTML = o.v.toFixed(cfg.dec) + '<span class="u">' + cfg.suf + '</span>';
+        }
+      });
+    });
+  }, { threshold: 0.3 });
+  io.observe(statsEl);
+});
+</script>
+
+</body>
+</html>
